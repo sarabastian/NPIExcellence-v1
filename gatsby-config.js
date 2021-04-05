@@ -6,5 +6,6 @@ module.exports = {
         tailwindConfig: `tailwind.config.js`
       }
     }
-  ]
+  ],
+ [`gatsby-plugin-netlify-cms`], [`gatsby-plugin-fontawesome-css`]
 };

@@ -14,16 +14,16 @@ const Header = () => (
       </div>
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4" href="#features">
-          Features
+          Who We Are
         </AnchorLink>
         <AnchorLink className="px-4" href="#services">
           Services
         </AnchorLink>
         <AnchorLink className="px-4" href="#stats">
-          Stats
+          Contact
         </AnchorLink>
         <AnchorLink className="px-4" href="#testimonials">
-          Testimonials
+          Blog
         </AnchorLink>
       </div>
       {/* <div className="hidden md:block">
