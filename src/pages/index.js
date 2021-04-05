@@ -18,6 +18,10 @@ import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
+import '../utils/font-awesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
   const [isFlipped, setFlip] = useState(false);
@@ -49,13 +53,19 @@ export default () => {
             </h1>
 
             <p className="text-xl lg:text-2xl mt-6 font-light">
-              Free landing page template to promote your business startup and generate leads for the
-              offered services
+              New product introductions are the life blood of a fast growth, high margin business.
+              NPI Excellence, LLC can enable your company to beat the competition and delight
+              customers, achieving your business objectives.
             </p>
-            <p className="mt-8 md:mt-12">
-              <i class="fas fa-arrow-down"></i>
-            </p>
-            <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
+            {/* <p className="mt-8 md:mt-12"> */}
+
+            {/* </p> */}
+            <AnchorLink className="px-4" href="#features">
+              <p className="mt-4 text-black-600">
+                <FontAwesomeIcon size="lg" icon={faArrowDown} />
+                {/* New Products Drive Growth */}
+              </p>
+            </AnchorLink>
           </div>
           <div className="lg:w-1/2">
             <HeroImage />
@@ -71,20 +81,20 @@ export default () => {
                 {isFlipped ? (
                   <Flip left isFlipped={isFlipped} flipDirection="vertical">
                     <Card className="mb-8">
-                      <p className="font-semibold text-xl">
-                        Including: fire suppression, semiconductor materials, industrial gases,
+                      <button onClick={handleClick} className="font-semibold text-xl">
+                        Spanning fire suppression, semiconductor materials, industrial gases, &
                         supply chain operations.
-                      </p>
+                      </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick}>Click to flip</button>
+                      {/* <button onClick={handleClick}>Click to flip</button> */}
                     </Card>
                   </Flip>
                 ) : (
-                  <Card onClick={handleClick} className="mb-8">
+                  <Card className="mb-8">
                     <Flip left isFlipped={isFlipped} flipDirection="vertical">
-                      <p className="font-semibold text-xl">
+                      <button onClick={handleClick} className="font-semibold text-xl">
                         Variety of NPI Experience across Several Industries
-                      </p>
+                      </button>
                       <p className="mt-4"></p>
                       <button onClick={handleClick}>Click to flip</button>
                     </Flip>
@@ -124,10 +134,10 @@ export default () => {
         id="services"
         primarySlot={
           <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+            <h3 className="text-3xl font-semibold leading-tight">NPI Maturity Model Assessment</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-              against the closest competitors
+              A 19 point assessment model to understand your current baseline and identify
+              improvement areas.
             </p>
           </div>
         }
