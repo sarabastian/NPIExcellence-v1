@@ -349,12 +349,10 @@ export default () => {
         reverseOrder
         primarySlot={
           <div className="lg:pl-32 xl:pl-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Design And Plan Your Business Growth Steps
-            </h3>
+            <h3 className="text-3xl font-semibold leading-tight">Portfolio Management Tools</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Once the market analysis process is completed our staff will search for opportunities
-              that are in reach
+              Tools to manage the portfolio of new products to insure the right mix of risk/reward
+              and ability to execute.
             </p>
           </div>
         }
@@ -364,11 +362,12 @@ export default () => {
         primarySlot={
           <div className="lg:pr-32 xl:pr-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Search For Performance Optimization
+              Multi-Generational Product Planning
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              With all the information in place you will be presented with an action plan that your
-              company needs to follow
+              Processes and tools to drive a strategic and market led approach to new product
+              development that aligns to your business strategy. Life cycle management of your
+              products.
             </p>
           </div>
         }
