@@ -164,6 +164,24 @@ export default () => {
                         industrial gases, equipment, services, IoT connected device digital
                         solutions and software.
                       </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick2}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
                     </Card>
                   </Flip>
                 ) : (
@@ -171,6 +189,24 @@ export default () => {
                     <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                       <button onClick={handleClick2} className="font-semibold text-xl">
                         New products across a broad range of spectrum of offerings
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick2}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Flip>
                   </Card>
@@ -186,6 +222,24 @@ export default () => {
                       <button onClick={handleClick3} className="font-semibold text-xl">
                         From a product manager/senior executive, not a consulting agency
                       </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick3}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
                     </Card>
                   </Flip>
                 ) : (
@@ -193,6 +247,24 @@ export default () => {
                     <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                       <button onClick={handleClick3} className="font-semibold text-xl">
                         Real World Product Management Experience
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick3}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Flip>
                   </Card>
@@ -208,6 +280,24 @@ export default () => {
                         Comply with various governmental and non-governmental codes and standards –
                         FAA, UL, FM Approvals
                       </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick4}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
                     </Card>
                   </Flip>
                 ) : (
@@ -215,6 +305,24 @@ export default () => {
                     <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                       <button onClick={handleClick4} className="font-semibold text-xl">
                         Experience Integrating New Product Development Plans
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick4}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Flip>
                   </Card>
