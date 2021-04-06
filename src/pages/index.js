@@ -24,9 +24,24 @@ import '../utils/font-awesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
-  const [isFlipped, setFlip] = useState(false);
-  const handleClick = () => {
-    setFlip(!isFlipped);
+  const [isFlipped1, setFlip1] = useState(false);
+  const handleClick1 = () => {
+    setFlip1(!isFlipped1);
+  };
+
+  const [isFlipped2, setFlip2] = useState(false);
+  const handleClick2 = () => {
+    setFlip2(!isFlipped2);
+  };
+
+  const [isFlipped3, setFlip3] = useState(false);
+  const handleClick3 = () => {
+    setFlip3(!isFlipped3);
+  };
+
+  const [isFlipped4, setFlip4] = useState(false);
+  const handleClick4 = () => {
+    setFlip4(!isFlipped4);
   };
 
   return (
@@ -78,10 +93,10 @@ export default () => {
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
               <Pulse>
-                {isFlipped ? (
-                  <Flip left isFlipped={isFlipped} flipDirection="vertical">
+                {isFlipped1 ? (
+                  <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick} className="font-semibold text-xl">
+                      <button onClick={handleClick1} className="font-semibold text-xl">
                         Spanning fire suppression, semiconductor materials, industrial gases, &
                         supply chain operations.
                       </button>
@@ -91,12 +106,12 @@ export default () => {
                   </Flip>
                 ) : (
                   <Card className="mb-8">
-                    <Flip left isFlipped={isFlipped} flipDirection="vertical">
-                      <button onClick={handleClick} className="font-semibold text-xl">
+                    <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
+                      <button onClick={handleClick1} className="font-semibold text-xl">
                         Variety of NPI Experience across Several Industries
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick}>Click to flip</button>
+                      <button onClick={handleClick1}>Click to flip</button>
                     </Flip>
                   </Card>
                 )}
@@ -104,27 +119,69 @@ export default () => {
             </div>
             <div className="flex-1 px-3">
               <Pulse>
-                <Card className="mb-8">
-                  <p className="font-semibold text-xl">
-                    New products across a broad range of spectrum of offerings
-                  </p>
-                </Card>
+                {isFlipped2 ? (
+                  <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
+                    <Card className="mb-8">
+                      <button onClick={handleClick2} className="font-semibold text-xl">
+                        Product experience with components and systems, materials, chemicals,
+                        industrial gases, equipment, services, IoT connected device digital
+                        solutions and software.
+                      </button>
+                    </Card>
+                  </Flip>
+                ) : (
+                  <Card className="mb-8">
+                    <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
+                      <button onClick={handleClick2} className="font-semibold text-xl">
+                        New products across a broad range of spectrum of offerings
+                      </button>
+                    </Flip>
+                  </Card>
+                )}
+              </Pulse>
+            </div>
+
+            <div className="flex-1 px-3">
+              <Pulse>
+                {isFlipped3 ? (
+                  <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
+                    <Card className="mb-8">
+                      <button onClick={handleClick3} className="font-semibold text-xl">
+                        From a product manager/senior executive, not a consulting agency
+                      </button>
+                    </Card>
+                  </Flip>
+                ) : (
+                  <Card className="mb-8">
+                    <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
+                      <button onClick={handleClick3} className="font-semibold text-xl">
+                        Real World Product Management Experience
+                      </button>
+                    </Flip>
+                  </Card>
+                )}
               </Pulse>
             </div>
             <div className="flex-1 px-3">
               <Pulse>
-                <Card className="mb-8">
-                  <p className="font-semibold text-xl">Real World Product Management Experience</p>
-                </Card>
-              </Pulse>
-            </div>
-            <div className="flex-1 px-3">
-              <Pulse>
-                <Card className="mb-8">
-                  <p className="font-semibold text-xl">
-                    Experience Integrating New Product Development Plans
-                  </p>
-                </Card>
+                {isFlipped4 ? (
+                  <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
+                    <Card className="mb-8">
+                      <button onClick={handleClick4} className="font-semibold text-xl">
+                        Comply with various governmental and non-governmental codes and standards –
+                        FAA, UL, FM Approvals
+                      </button>
+                    </Card>
+                  </Flip>
+                ) : (
+                  <Card className="mb-8">
+                    <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
+                      <button onClick={handleClick4} className="font-semibold text-xl">
+                        Experience Integrating New Product Development Plans
+                      </button>
+                    </Flip>
+                  </Card>
+                )}
               </Pulse>
             </div>
           </div>
