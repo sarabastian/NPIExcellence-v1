@@ -17,11 +17,8 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
-import '../utils/font-awesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
   const [isFlipped1, setFlip1] = useState(false);
@@ -49,15 +46,6 @@ export default () => {
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
-            {/* <Transition
-              items={items}
-              keys={item => item.key}
-              from={{ transform: 'translate3d(0,-40px,0)' }}
-              enter={{ transform: 'translate3d(0,0px,0)' }}
-              leave={{ transform: 'translate3d(0,-40px,0)' }}
-            >
-              {item => props => <div style={props}>{item.text}</div>}
-            </Transition> */}
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
               <TextLoop>
                 <span>Ideate</span>
@@ -75,9 +63,21 @@ export default () => {
             {/* <p className="mt-8 md:mt-12"> */}
 
             {/* </p> */}
+
             <AnchorLink className="px-4" href="#features">
-              <p className="mt-4 text-black-600">
-                <FontAwesomeIcon size="lg" icon={faArrowDown} />
+              <p className="mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="black"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
                 {/* New Products Drive Growth */}
               </p>
             </AnchorLink>
@@ -96,22 +96,56 @@ export default () => {
                 {isFlipped1 ? (
                   <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick1} className="font-semibold text-xl">
+                      <button onClick={handleClick1} className="font-light text-xl">
                         Spanning fire suppression, semiconductor materials, industrial gases, &
                         supply chain operations.
                       </button>
+
                       <p className="mt-4"></p>
+                      <button onClick={handleClick1}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
                       {/* <button onClick={handleClick}>Click to flip</button> */}
                     </Card>
                   </Flip>
                 ) : (
-                  <Card className="mb-8">
+                  <Card className="mb-8 ">
                     <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                       <button onClick={handleClick1} className="font-semibold text-xl">
                         Variety of NPI Experience across Several Industries
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick1}>Click to flip</button>
+                      <button onClick={handleClick1}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
                     </Flip>
                   </Card>
                 )}
@@ -122,10 +156,28 @@ export default () => {
                 {isFlipped2 ? (
                   <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick2} className="font-semibold text-xl">
+                      <button onClick={handleClick2} className="font-light text-xl">
                         Product experience with components and systems, materials, chemicals,
                         industrial gases, equipment, services, IoT connected device digital
                         solutions and software.
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick2}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Card>
                   </Flip>
@@ -134,6 +186,24 @@ export default () => {
                     <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                       <button onClick={handleClick2} className="font-semibold text-xl">
                         New products across a broad range of spectrum of offerings
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick2}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Flip>
                   </Card>
@@ -146,8 +216,26 @@ export default () => {
                 {isFlipped3 ? (
                   <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick3} className="font-semibold text-xl">
+                      <button onClick={handleClick3} className="font-light text-xl">
                         From a product manager/senior executive, not a consulting agency
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick3}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Card>
                   </Flip>
@@ -156,6 +244,24 @@ export default () => {
                     <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                       <button onClick={handleClick3} className="font-semibold text-xl">
                         Real World Product Management Experience
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick3}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Flip>
                   </Card>
@@ -167,9 +273,27 @@ export default () => {
                 {isFlipped4 ? (
                   <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick4} className="font-semibold text-xl">
+                      <button onClick={handleClick4} className="font-light text-xl">
                         Comply with various governmental and non-governmental codes and standards –
                         FAA, UL, FM Approvals
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick4}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Card>
                   </Flip>
@@ -178,6 +302,24 @@ export default () => {
                     <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                       <button onClick={handleClick4} className="font-semibold text-xl">
                         Experience Integrating New Product Development Plans
+                      </button>
+                      <p className="mt-4"></p>
+                      <button onClick={handleClick4}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
                       </button>
                     </Flip>
                   </Card>
@@ -204,12 +346,10 @@ export default () => {
         reverseOrder
         primarySlot={
           <div className="lg:pl-32 xl:pl-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Design And Plan Your Business Growth Steps
-            </h3>
+            <h3 className="text-3xl font-semibold leading-tight">Portfolio Management Tools</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Once the market analysis process is completed our staff will search for opportunities
-              that are in reach
+              Tools to manage the portfolio of new products to insure the right mix of risk/reward
+              and ability to execute.
             </p>
           </div>
         }
@@ -219,11 +359,12 @@ export default () => {
         primarySlot={
           <div className="lg:pr-32 xl:pr-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Search For Performance Optimization
+              Multi-Generational Product Planning
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              With all the information in place you will be presented with an action plan that your
-              company needs to follow
+              Processes and tools to drive a strategic and market led approach to new product
+              development that aligns to your business strategy. Life cycle management of your
+              products.
             </p>
           </div>
         }
