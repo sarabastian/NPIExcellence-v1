@@ -17,7 +17,7 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import '../utils/font-awesome';
@@ -49,15 +49,6 @@ export default () => {
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
-            {/* <Transition
-              items={items}
-              keys={item => item.key}
-              from={{ transform: 'translate3d(0,-40px,0)' }}
-              enter={{ transform: 'translate3d(0,0px,0)' }}
-              leave={{ transform: 'translate3d(0,-40px,0)' }}
-            >
-              {item => props => <div style={props}>{item.text}</div>}
-            </Transition> */}
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
               <TextLoop>
                 <span>Ideate</span>
@@ -75,12 +66,13 @@ export default () => {
             {/* <p className="mt-8 md:mt-12"> */}
 
             {/* </p> */}
+            {/* 
             <AnchorLink className="px-4" href="#features">
               <p className="mt-4 text-black-600">
                 <FontAwesomeIcon size="lg" icon={faArrowDown} />
                 {/* New Products Drive Growth */}
-              </p>
-            </AnchorLink>
+            {/* </p>
+            </AnchorLink> */}
           </div>
           <div className="lg:w-1/2">
             <HeroImage />
