@@ -20,9 +20,6 @@ import { motion } from 'framer-motion';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import '../utils/font-awesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-
 export default () => {
   const [isFlipped1, setFlip1] = useState(false);
   const handleClick1 = () => {
@@ -68,12 +65,12 @@ export default () => {
             {/* </p> */}
 
             <AnchorLink className="px-4" href="#features">
-              <p className="mt-4 text-black-600">
+              <p className="mt-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
                   viewBox="0 0 20 20"
-                  fill="currentColor"
+                  fill="black"
                 >
                   <path
                     fillRule="evenodd"
