@@ -1,6 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Logo from '../../../public/NPIExcellence.png';
+import Logo from '../../NPIExcellence.png';
 import Button from '../Button';
 import '../../css/app.css';
 
