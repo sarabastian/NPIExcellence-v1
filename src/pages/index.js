@@ -66,13 +66,24 @@ export default () => {
             {/* <p className="mt-8 md:mt-12"> */}
 
             {/* </p> */}
-            {/* 
+
             <AnchorLink className="px-4" href="#features">
               <p className="mt-4 text-black-600">
-                <FontAwesomeIcon size="lg" icon={faArrowDown} />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
                 {/* New Products Drive Growth */}
-            {/* </p>
-            </AnchorLink> */}
+              </p>
+            </AnchorLink>
           </div>
           <div className="lg:w-1/2">
             <HeroImage />
@@ -92,7 +103,25 @@ export default () => {
                         Spanning fire suppression, semiconductor materials, industrial gases, &
                         supply chain operations.
                       </button>
+
                       <p className="mt-4"></p>
+                      <button onClick={handleClick1}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
                       {/* <button onClick={handleClick}>Click to flip</button> */}
                     </Card>
                   </Flip>
@@ -103,7 +132,23 @@ export default () => {
                         Variety of NPI Experience across Several Industries
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick1}>Click to flip</button>
+                      <button onClick={handleClick1}>
+                        {' '}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
                     </Flip>
                   </Card>
                 )}
