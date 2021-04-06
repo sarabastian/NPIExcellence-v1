@@ -25,7 +25,7 @@ const Header = () => {
                 <button
                   onClick={handleMenu}
                   type="button"
-                  class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                  class=" hover:bg-gray-100 inline-flex justify-center w-full px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
                   id="options-menu"
                   aria-expanded="true"
                   aria-haspopup="true"
@@ -77,7 +77,7 @@ const Header = () => {
                 <button
                   onClick={handleMenu}
                   type="button"
-                  class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                  class="hover:bg-gray-100 inline-flex justify-center w-full px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
                   id="options-menu"
                   aria-expanded="true"
                   aria-haspopup="true"
@@ -101,16 +101,28 @@ const Header = () => {
             </div>
           )}
 
-          <AnchorLink className="px-4" href="#features">
+          <AnchorLink
+            className="hover:bg-gray-100 block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            href="#features"
+          >
             Who We Are
           </AnchorLink>
-          <AnchorLink className="px-4" href="#services">
+          <AnchorLink
+            className="font-sans block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            href="#services"
+          >
             Services
           </AnchorLink>
-          <AnchorLink className="px-4" href="#stats">
+          <AnchorLink
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            href="#stats"
+          >
             Contact
           </AnchorLink>
-          <AnchorLink className="px-4" href="#testimonials">
+          <AnchorLink
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            href="#testimonials"
+          >
             Blog
           </AnchorLink>
         </div>

@@ -123,7 +123,7 @@ export default () => {
                     </Card>
                   </Flip>
                 ) : (
-                  <Card className="mb-8">
+                  <Card className="mb-8 ">
                     <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                       <button onClick={handleClick1} className="font-semibold text-xl">
                         Variety of NPI Experience across Several Industries
