@@ -96,7 +96,7 @@ export default () => {
                 {isFlipped1 ? (
                   <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick1} className="font-semibold text-xl">
+                      <button onClick={handleClick1} className="font-light text-xl">
                         Spanning fire suppression, semiconductor materials, industrial gases, &
                         supply chain operations.
                       </button>
@@ -156,7 +156,7 @@ export default () => {
                 {isFlipped2 ? (
                   <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick2} className="font-semibold text-xl">
+                      <button onClick={handleClick2} className="font-light text-xl">
                         Product experience with components and systems, materials, chemicals,
                         industrial gases, equipment, services, IoT connected device digital
                         solutions and software.
@@ -216,7 +216,7 @@ export default () => {
                 {isFlipped3 ? (
                   <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick3} className="font-semibold text-xl">
+                      <button onClick={handleClick3} className="font-light text-xl">
                         From a product manager/senior executive, not a consulting agency
                       </button>
                       <p className="mt-4"></p>
@@ -273,7 +273,7 @@ export default () => {
                 {isFlipped4 ? (
                   <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick4} className="font-semibold text-xl">
+                      <button onClick={handleClick4} className="font-light text-xl">
                         Comply with various governmental and non-governmental codes and standards –
                         FAA, UL, FM Approvals
                       </button>

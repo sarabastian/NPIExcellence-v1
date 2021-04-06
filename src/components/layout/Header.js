@@ -15,7 +15,9 @@ const Header = () => {
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
         <div className="flex items-center text-2xl">
           <div className="mr-20">
-            <img src={Logo} alt="NPI Excellence" className="logo" />
+            <AnchorLink href="#">
+              <img src={Logo} alt="NPI Excellence" className="logo" />
+            </AnchorLink>
           </div>
         </div>
         <div className="flex mt-4 sm:mt-0">
@@ -61,13 +63,13 @@ const Header = () => {
                   >
                     About
                   </AnchorLink>
-                  <a
-                    href="#"
+                  <AnchorLink
+                    href="#services"
                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                     role="menuitem"
                   >
                     Philosophy
-                  </a>
+                  </AnchorLink>
                 </div>
               </div>
             </div>
@@ -101,12 +103,6 @@ const Header = () => {
             </div>
           )}
 
-          <AnchorLink
-            className="hover:bg-gray-100 block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            href="#features"
-          >
-            Who We Are
-          </AnchorLink>
           <AnchorLink
             className="font-sans block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             href="#services"
