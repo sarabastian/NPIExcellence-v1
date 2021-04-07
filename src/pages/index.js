@@ -19,6 +19,8 @@ import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from 'gatsby';
+import Services from './services';
 
 export default () => {
   const [isFlipped1, setFlip1] = useState(false);
@@ -329,47 +331,75 @@ export default () => {
           </div>
         </div>
       </section>
-      <SplitSection
-        id="services"
-        primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">NPI Maturity Model Assessment</h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              A 19 point assessment model to understand your current baseline and identify
-              improvement areas.
+      <Zoom>
+        <SplitSection
+          id="services"
+          primarySlot={
+            <div className="lg:pr-32 xl:pr-48">
+              <h3 className="text-3xl font-semibold leading-tight">
+                NPI Maturity Model Assessment
+              </h3>
+              <p className="mt-8 text-xl font-light leading-relaxed">
+                A 19 point assessment model to understand your current baseline and identify
+                improvement areas.
+              </p>
+            </div>
+          }
+          secondarySlot={<SvgCharts />}
+        />
+
+        <SplitSection
+          reverseOrder
+          primarySlot={
+            <div className="lg:pl-32 xl:pl-48">
+              <h3 className="text-3xl font-semibold leading-tight">Portfolio Management Tools</h3>
+              <p className="mt-8 text-xl font-light leading-relaxed">
+                Tools to manage the portfolio of new products to insure the right mix of risk/reward
+                and ability to execute.
+              </p>
+            </div>
+          }
+          secondarySlot={<SvgCharts />}
+        />
+        <SplitSection
+          primarySlot={
+            <div className="lg:pr-32 xl:pr-48">
+              <h3 className="text-3xl font-semibold leading-tight">
+                Multi-Generational Product Planning
+              </h3>
+              <p className="mt-8 text-xl font-light leading-relaxed">
+                Processes and tools to drive a strategic and market led approach to new product
+                development that aligns to your business strategy. Life cycle management of your
+                products.
+              </p>
+            </div>
+          }
+          secondarySlot={<SvgCharts />}
+        />
+        <Link to="/services">
+          <LabelText className="text-gray-600">
+            <p className="container mx-auto px-16 items-center flex flex-col lg:flex-row">
+              <button className="mt-8 text-xl font-light leading-relaxed">
+                See all our services
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
             </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      />
-      <SplitSection
-        reverseOrder
-        primarySlot={
-          <div className="lg:pl-32 xl:pl-48">
-            <h3 className="text-3xl font-semibold leading-tight">Portfolio Management Tools</h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Tools to manage the portfolio of new products to insure the right mix of risk/reward
-              and ability to execute.
-            </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      />
-      <SplitSection
-        primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Multi-Generational Product Planning
-            </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Processes and tools to drive a strategic and market led approach to new product
-              development that aligns to your business strategy. Life cycle management of your
-              products.
-            </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      />
+          </LabelText>
+        </Link>
+      </Zoom>
       <section id="stats" className="py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Our customers get results</LabelText>
