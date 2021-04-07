@@ -4,6 +4,7 @@ import SvgCharts from '../svg/SvgCharts';
 import Footer from '../components/layout/Footer';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Logo from '../NPIExcellence.png';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Services = () => {
   const [open, setMenu] = React.useState(false);
@@ -16,7 +17,7 @@ const Services = () => {
         <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
           <div className="flex items-center text-2xl">
             <div className="mr-20">
-              <AnchorLink href="#">
+              <AnchorLink href="/">
                 <img src={Logo} alt="NPI Excellence" className="logo" />
               </AnchorLink>
             </div>
@@ -58,7 +59,7 @@ const Services = () => {
                 >
                   <div class="py-1" role="none">
                     <AnchorLink
-                      href="#features"
+                      href="/#features"
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                       role="menuitem"
                     >

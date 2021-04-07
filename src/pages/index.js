@@ -22,7 +22,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import Services from './services';
 
-export default () => {
+export default function Home() {
   const [isFlipped1, setFlip1] = useState(false);
   const handleClick1 = () => {
     setFlip1(!isFlipped1);
@@ -442,4 +442,4 @@ export default () => {
       </section>
     </Layout>
   );
-};
+}
