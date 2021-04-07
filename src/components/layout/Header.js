@@ -3,6 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Logo from '../../NPIExcellence.png';
 import Button from '../Button';
 import '../../css/app.css';
+import { Link } from 'gatsby';
 
 const Header = () => {
   const [open, setMenu] = React.useState(false);
@@ -15,9 +16,9 @@ const Header = () => {
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
         <div className="flex items-center text-2xl">
           <div className="mr-20">
-            <AnchorLink href="#">
+            <Link to="/">
               <img src={Logo} alt="NPI Excellence" className="logo" />
-            </AnchorLink>
+            </Link>
           </div>
         </div>
         <div className="flex mt-4 sm:mt-0">
