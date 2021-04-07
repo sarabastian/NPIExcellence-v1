@@ -2,9 +2,12 @@ import React from 'react';
 import SplitSection from '../components/SplitSection';
 import SvgCharts from '../svg/SvgCharts';
 import Footer from '../components/layout/Footer';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { Link } from 'gatsby';
+
 import Logo from '../NPIExcellence.png';
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
 
 const Services = () => {
   const [open, setMenu] = React.useState(false);
@@ -17,9 +20,9 @@ const Services = () => {
         <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
           <div className="flex items-center text-2xl">
             <div className="mr-20">
-              <AnchorLink href="/">
+              <Link to="/">
                 <img src={Logo} alt="NPI Excellence" className="logo" />
-              </AnchorLink>
+              </Link>{' '}
             </div>
           </div>
           <div className="flex mt-4 sm:mt-0">
@@ -58,20 +61,20 @@ const Services = () => {
                   aria-labelledby="options-menu"
                 >
                   <div class="py-1" role="none">
-                    <AnchorLink
-                      href="/#features"
+                    <Link
+                      to="/#features"
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                       role="menuitem"
                     >
                       About
-                    </AnchorLink>
-                    <AnchorLink
-                      href="#services"
+                    </Link>
+                    <Link
+                      to="/#services"
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                       role="menuitem"
                     >
                       Philosophy
-                    </AnchorLink>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -105,24 +108,24 @@ const Services = () => {
               </div>
             )}
 
-            <AnchorLink
+            <Link
               className="font-sans block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              href="#services"
+              to="/#services"
             >
               Services
-            </AnchorLink>
-            <AnchorLink
+            </Link>
+            <Link
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              href="#stats"
+              to="/#stats"
             >
               Contact
-            </AnchorLink>
-            <AnchorLink
+            </Link>
+            <Link
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              href="#testimonials"
+              to="/#testimonials"
             >
               Blog
-            </AnchorLink>
+            </Link>
           </div>
 
           {/*         

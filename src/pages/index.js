@@ -19,8 +19,10 @@ import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import { Link } from 'gatsby';
 import Services from './services';
+import { navigate } from '@reach/router';
 
 export default function Home() {
   const [isFlipped1, setFlip1] = useState(false);
