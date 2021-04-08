@@ -100,13 +100,16 @@ export default function Home() {
                 {isFlipped1 ? (
                   <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick1} className="font-light text-xl">
+                      <button
+                        onClick={handleClick1}
+                        className="focus:outline-none font-light text-xl"
+                      >
                         Spanning fire suppression, semiconductor materials, industrial gases, &
                         supply chain operations.
                       </button>
 
                       <p className="mt-4"></p>
-                      <button onClick={handleClick1}>
+                      <button onClick={handleClick1} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -129,11 +132,14 @@ export default function Home() {
                 ) : (
                   <Card className="mb-8 ">
                     <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
-                      <button onClick={handleClick1} className="font-semibold text-xl">
+                      <button
+                        onClick={handleClick1}
+                        className="focus:outline-none font-semibold text-xl"
+                      >
                         Variety of NPI Experience across Several Industries
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick1}>
+                      <button onClick={handleClick1} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -160,13 +166,16 @@ export default function Home() {
                 {isFlipped2 ? (
                   <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick2} className="font-light text-xl">
+                      <button
+                        onClick={handleClick2}
+                        className="focus:outline-none font-light text-xl"
+                      >
                         Product experience with components and systems, materials, chemicals,
                         industrial gases, equipment, services, IoT connected device digital
                         solutions and software.
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick2}>
+                      <button onClick={handleClick2} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -188,11 +197,14 @@ export default function Home() {
                 ) : (
                   <Card className="mb-8">
                     <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
-                      <button onClick={handleClick2} className="font-semibold text-xl">
+                      <button
+                        onClick={handleClick2}
+                        className="focus:outline-none font-semibold text-xl"
+                      >
                         New products across a broad range of spectrum of offerings
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick2}>
+                      <button onClick={handleClick2} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -220,11 +232,14 @@ export default function Home() {
                 {isFlipped3 ? (
                   <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick3} className="font-light text-xl">
+                      <button
+                        onClick={handleClick3}
+                        className="focus:outline-none font-light text-xl"
+                      >
                         From a product manager/senior executive, not a consulting agency
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick3}>
+                      <button onClick={handleClick3} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -246,11 +261,14 @@ export default function Home() {
                 ) : (
                   <Card className="mb-8">
                     <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
-                      <button onClick={handleClick3} className="font-semibold text-xl">
+                      <button
+                        onClick={handleClick3}
+                        className="focus:outline-none font-semibold text-xl"
+                      >
                         Real World Product Management Experience
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick3}>
+                      <button onClick={handleClick3} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -277,16 +295,19 @@ export default function Home() {
                 {isFlipped4 ? (
                   <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                     <Card className="mb-8">
-                      <button onClick={handleClick4} className="font-light text-xl">
+                      <button
+                        onClick={handleClick4}
+                        className="focus:outline-none font-light text-xl"
+                      >
                         Comply with various governmental and non-governmental codes and standards –
                         FAA, UL, FM Approvals
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick4}>
+                      <button onClick={handleClick4} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-6 w-6"
+                          className=" h-6 w-6"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -304,11 +325,14 @@ export default function Home() {
                 ) : (
                   <Card className="mb-8">
                     <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
-                      <button onClick={handleClick4} className="font-semibold text-xl">
+                      <button
+                        onClick={handleClick4}
+                        className="focus:outline-none font-semibold text-xl"
+                      >
                         Experience Integrating New Product Development Plans
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick4}>
+                      <button onClick={handleClick4} className="focus:outline-none">
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
