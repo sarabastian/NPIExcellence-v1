@@ -33,6 +33,22 @@ const Footer = () => (
         </ul>
       </div>
     </div>
+    <div>
+      <div>
+        <p className="text-sm">
+          Icons made by{' '}
+          <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">
+            Smashicons
+          </a>{' '}
+          from{' '}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </p>
+        Icon by <a href="https://freeicons.io/profile/5596">shivani</a> on{' '}
+        <a href="https://freeicons.io">freeicons.io</a>
+      </div>
+    </div>
   </footer>
 );
 

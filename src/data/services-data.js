@@ -1,11 +1,13 @@
-import '../assets/images/lightbulb.png';
+import Target from '../svg/target.svg';
+import VoC from '../svg/voc.svg';
+import Lean from '../svg/lean.svg';
 export default [
   {
     title: 'NPI Maturity Model Assessment ',
     content:
       'A 19 point assessment model to understand your current baseline and identify improvement areas',
     customerName: 'Jane Doe',
-    customerImage: '../assets/images/lightbulb.png'
+    customerImage: <Target />
   },
   {
     title: 'Portfolio Management Tools',
@@ -24,7 +26,7 @@ export default [
     title: 'Voice of Customer',
     content:
       'Proven methods to insure new product success with customer involvement from point of inception to post launch. Kano modeling for product feature prioritization',
-    customerImage: 'https://placeimg.com/150/150/tech'
+    customerImage: <VoC />
   },
   {
     title: 'SKU Rationalization',
@@ -40,7 +42,7 @@ export default [
   {
     title: 'Lean Techniques',
     content: 'MVP for speed to market',
-    customerImage: 'https://placeimg.com/150/150/startup'
+    customerImage: <Lean />
   },
   {
     title: 'Product Management Organizational Ladder/Skill acquisition',
