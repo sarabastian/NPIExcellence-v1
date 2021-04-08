@@ -5,19 +5,19 @@ import Flip from 'react-reveal/Flip';
 import TextLoop from 'react-text-loop';
 import Button from '../components/Button';
 import Card from '../components/Card';
-import CustomerCard from '../components/CustomerCard';
+import ServiceCard from '../components/ServiceCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
+import servicesData from '../data/services-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { Link } from 'gatsby';
@@ -405,7 +405,7 @@ export default function Home() {
         <Link to="/services">
           <LabelText className="text-gray-600">
             <p className="container mx-auto px-16 items-center flex flex-col lg:flex-row">
-              <button className="mt-8 text-xl font-light leading-relaxed">
+              <button className="focus:outline-none mt-8 text-xl font-light leading-relaxed">
                 See all our services
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -448,9 +448,9 @@ export default function Home() {
             What customers are saying
           </LabelText>
           <div className="flex flex-col md:flex-row md:-mx-3">
-            {customerData.map(customer => (
-              <div key={customer.customerName} className="flex-1 px-3">
-                <CustomerCard customer={customer} />
+            {servicesData.map(service => (
+              <div key={service} className="flex-1 px-3">
+                <ServiceCard service={service} />
               </div>
             ))}
           </div>

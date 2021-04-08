@@ -1,6 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Logo from '../../NPIExcellence.png';
+import Logo from '../../assets/images/NPIExcellence.png';
 import Button from '../Button';
 import '../../css/app.css';
 import { Link } from 'gatsby';
@@ -104,12 +104,12 @@ const Header = () => {
             </div>
           )}
 
-          <AnchorLink
+          <Link
             className="font-sans block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            href="#services"
+            to="/services"
           >
             Services
-          </AnchorLink>
+          </Link>
           <AnchorLink
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             href="#stats"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Logo from '../../NPIExcellence.png';
+import Logo from '../../assets/images/NPIExcellence.png';
 
 const SecondPageHeader = () => {
   const [open, setMenu] = React.useState(false);
