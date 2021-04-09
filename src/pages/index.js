@@ -72,16 +72,17 @@ export default function Home() {
               <p className="mt-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-10 w-10"
                   viewBox="0 0 20 20"
-                  fill="black"
+                  fill="currentColor"
                 >
                   <path
                     fillRule="evenodd"
-                    d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
                     clipRule="evenodd"
                   />
                 </svg>
+
                 {/* New Products Drive Growth */}
               </p>
             </AnchorLink>
