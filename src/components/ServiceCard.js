@@ -3,7 +3,7 @@ import Card from './Card';
 
 const ServiceCard = ({ service }) => (
   <Card className="mb-8">
-    <div className="align-content: center md:my-9">
+    <div className=" md:justify-center md:my-9">
       {service.customerImage}
       {/* <img className="object-center rounded-full" src={service.customerImage} /> */}
     </div>
