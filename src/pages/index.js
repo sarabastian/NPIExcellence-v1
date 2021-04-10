@@ -17,6 +17,8 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
+import Slide from 'react-reveal/Slide';
+import { animations } from 'react-animation';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -43,6 +45,10 @@ export default function Home() {
   const [isFlipped4, setFlip4] = useState(false);
   const handleClick4 = () => {
     setFlip4(!isFlipped4);
+  };
+
+  const styles = {
+    animation: animations.fadeInUp,
   };
 
   return (
@@ -403,30 +409,34 @@ export default function Home() {
           }
           secondarySlot={<SvgCharts />}
         />
-        <Link to="/services">
-          <LabelText className="text-gray-600">
-            <p className="container mx-auto px-16 items-center flex flex-col lg:flex-row">
-              <button className="focus:outline-none mt-8 text-xl font-light leading-relaxed">
-                See all our services
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-            </p>
-          </LabelText>
-        </Link>
       </Zoom>
+      <Link to="/services">
+        <LabelText className="text-gray-600">
+          <p
+            style={styles}
+            className="container mx-auto px-16 items-center flex flex-col lg:flex-row"
+          >
+            <button className="focus:outline-none mt-8 text-xl font-light leading-relaxed">
+              See all our services
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </button>
+          </p>
+        </LabelText>
+      </Link>
+
       <section id="philosophy" className="py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Our Philosophy</LabelText>
@@ -448,6 +458,7 @@ export default function Home() {
           </div> */}
         </div>
       </section>
+
       <section className="container mx-auto my-20 py-24 bg-gray-100 rounded-lg text-center">
         <h3 className="text-5xl font-semibold">
           {' '}
@@ -457,12 +468,14 @@ export default function Home() {
       </section>
 
       <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-        <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
+        <Slide left>
+          <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
+        </Slide>
         <p className="mt-8 text-xl font-light">
           Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus
           in.
         </p>
-        <p className="mt-8">
+        <p className="mt-8" style={styles}>
           <Button size="xl">Get Started Now</Button>
         </p>
       </section>
