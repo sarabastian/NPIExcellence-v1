@@ -5,12 +5,10 @@ import Flip from 'react-reveal/Flip';
 import TextLoop from 'react-text-loop';
 import Button from '../components/Button';
 import Card from '../components/Card';
-import ServiceCard from '../components/ServiceCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import servicesData from '../data/services-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import Zoom from 'react-reveal/Zoom';
@@ -23,8 +21,7 @@ import { animations } from 'react-animation';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { Link } from 'gatsby';
-import Services from './services';
-import { navigate } from '@reach/router';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Home() {
   const [isFlipped1, setFlip1] = useState(false);
@@ -101,6 +98,7 @@ export default function Home() {
       <section id="features" className="py-20 lg:pb-40 lg:pt-48">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">Why We're Different</h2>
+
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
               <Pulse>
@@ -400,6 +398,7 @@ export default function Home() {
               <h3 className="text-3xl font-semibold leading-tight">
                 Multi-Generational Product Planning
               </h3>
+
               <p className="mt-8 text-xl font-light leading-relaxed">
                 Processes and tools to drive a strategic and market led approach to new product
                 development that aligns to your business strategy. Life cycle management of your
