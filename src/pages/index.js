@@ -443,23 +443,24 @@ export default function Home() {
             NPI Excellence's passion is transforming business performance through strategic planning
             and new product introductions (NPIs)
           </h2>
-          <div
-            className={`mt-8 p-12 rounded-lg border border-solid border-gray-200`}
-            // className={`p-12 focus:outline-none ${className}`}
-            style={{
-              boxShadow: '0 10px 28px rgba(0,0,0,.08)',
-            }}
-          >
-            <p style={styles}>
-              I've led product management teams across a variety of industries to achieve
-              significant top and bottom line growth, driven by NPIs. ​I’ve been a professional
-              Engineering Consultant since 2000. I believe in maintaining a positive mindset,
-              creating partnerships with a purpose, and always striving for significant outcomes.
-              When you work with me, you should expect a collaboration with transparency and
-              consistency. Want to learn more? Contact me today for an initial consultation. ​
-            </p>
-          </div>
-
+          <Fade>
+            <div
+              className={`mt-8 p-12 rounded-lg border border-solid border-gray-200`}
+              // className={`p-12 focus:outline-none ${className}`}
+              style={{
+                boxShadow: '0 10px 28px rgba(0,0,0,.08)',
+              }}
+            >
+              <p>
+                I've led product management teams across a variety of industries to achieve
+                significant top and bottom line growth, driven by NPIs. ​I’ve been a professional
+                Engineering Consultant since 2000. I believe in maintaining a positive mindset,
+                creating partnerships with a purpose, and always striving for significant outcomes.
+                When you work with me, you should expect a collaboration with transparency and
+                consistency. Want to learn more? Contact me today for an initial consultation. ​
+              </p>
+            </div>
+          </Fade>
           {/* <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
             <div className="w-full sm:w-1/3">
               <StatsBox primaryText="+100%" secondaryText="Stats Information" />
@@ -486,15 +487,17 @@ export default function Home() {
         id="contact"
         className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
       >
-        <Slide left>
-          <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-        </Slide>
+        <h3 style={styles} className="text-5xl font-semibold">
+          Ready for new growth?
+        </h3>
+
         <p className="mt-8 text-xl font-light">
           Contact me today to set up a meeting and find out more about what I can do for your
           business.
         </p>
-        <p className="mt-8" style={styles}>
+        <p className="mt-8">
           <Button
+            style={styles}
             className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
             size="xl"
           >
