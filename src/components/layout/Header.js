@@ -112,13 +112,13 @@ const Header = () => {
           </Link>
           <AnchorLink
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            href="#stats"
+            href="#contact"
           >
             Contact
           </AnchorLink>
           <AnchorLink
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            href="#testimonials"
+            href="#contact"
           >
             Blog
           </AnchorLink>

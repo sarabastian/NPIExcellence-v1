@@ -104,7 +104,7 @@ export default function Home() {
               <Pulse>
                 {isFlipped1 ? (
                   <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
-                    <Card className="mb-8">
+                    <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
                         onClick={handleClick1}
                         className="focus:outline-none font-light text-xl"
@@ -135,7 +135,7 @@ export default function Home() {
                     </Card>
                   </Flip>
                 ) : (
-                  <Card className="mb-8 ">
+                  <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8 ">
                     <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                       <button
                         onClick={handleClick1}
@@ -170,7 +170,7 @@ export default function Home() {
               <Pulse>
                 {isFlipped2 ? (
                   <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
-                    <Card className="mb-8">
+                    <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
                         onClick={handleClick2}
                         className="focus:outline-none font-light text-xl"
@@ -200,7 +200,7 @@ export default function Home() {
                     </Card>
                   </Flip>
                 ) : (
-                  <Card className="mb-8">
+                  <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                     <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                       <button
                         onClick={handleClick2}
@@ -236,7 +236,7 @@ export default function Home() {
               <Pulse>
                 {isFlipped3 ? (
                   <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
-                    <Card className="mb-8">
+                    <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
                         onClick={handleClick3}
                         className="focus:outline-none font-light text-xl"
@@ -264,7 +264,7 @@ export default function Home() {
                     </Card>
                   </Flip>
                 ) : (
-                  <Card className="mb-8">
+                  <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                     <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                       <button
                         onClick={handleClick3}
@@ -299,7 +299,7 @@ export default function Home() {
               <Pulse>
                 {isFlipped4 ? (
                   <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
-                    <Card className="mb-8">
+                    <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
                         onClick={handleClick4}
                         className="focus:outline-none font-light text-xl"
@@ -328,7 +328,7 @@ export default function Home() {
                     </Card>
                   </Flip>
                 ) : (
-                  <Card className="mb-8">
+                  <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                     <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                       <button
                         onClick={handleClick4}
@@ -419,7 +419,7 @@ export default function Home() {
               See all our services
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="animate-bounce h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -439,10 +439,26 @@ export default function Home() {
       <section id="philosophy" className="py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Our Philosophy</LabelText>
-          <h3 className="text-xl lg:text-2xl mt-6 font-light">
+          <h2 className="text-xl lg:text-3xl mt-6 font-light">
             NPI Excellence's passion is transforming business performance through strategic planning
             and new product introductions (NPIs)
-          </h3>
+          </h2>
+          <div
+            className={`mt-8 p-12 rounded-lg border border-solid border-gray-200`}
+            // className={`p-12 focus:outline-none ${className}`}
+            style={{
+              boxShadow: '0 10px 28px rgba(0,0,0,.08)',
+            }}
+          >
+            <p style={styles}>
+              I've led product management teams across a variety of industries to achieve
+              significant top and bottom line growth, driven by NPIs. ​I’ve been a professional
+              Engineering Consultant since 2000. I believe in maintaining a positive mindset,
+              creating partnerships with a purpose, and always striving for significant outcomes.
+              When you work with me, you should expect a collaboration with transparency and
+              consistency. Want to learn more? Contact me today for an initial consultation. ​
+            </p>
+          </div>
 
           {/* <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
             <div className="w-full sm:w-1/3">
@@ -458,24 +474,32 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto my-20 py-24 bg-gray-100 rounded-lg text-center">
+      {/* <section className="container mx-auto my-20 py-24 bg-gray-100 rounded-lg text-center">
         <h3 className="text-5xl font-semibold">
           {' '}
           NPI Excellence's passion is transforming business performance through strategic planning
           and new product introductions (NPIs)
         </h3>
-      </section>
+      </section> */}
 
-      <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+      <section
+        id="contact"
+        className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
+      >
         <Slide left>
           <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
         </Slide>
         <p className="mt-8 text-xl font-light">
-          Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus
-          in.
+          Contact me today to set up a meeting and find out more about what I can do for your
+          business.
         </p>
         <p className="mt-8" style={styles}>
-          <Button size="xl">Get Started Now</Button>
+          <Button
+            className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
+            size="xl"
+          >
+            Get Started Now
+          </Button>
         </p>
       </section>
     </Layout>
