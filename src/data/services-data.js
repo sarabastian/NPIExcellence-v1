@@ -3,13 +3,19 @@ import VoC from '../svg/voc.svg';
 import Lean from '../svg/mvp.svg';
 import Tool from '../svg/tool.svg';
 import Multi from '../svg/multi.svg';
-import Portfolio from '../svg/portfolio.svg';
-import Competitive from '../svg/competitive.svg';
+
 import Expansion from '../svg/expansion.svg';
 import Skill from '../svg/skill.svg';
 
 import Maturity from '../svg/maturitymodel.svg';
 import Customer from '../svg/reviews.svg';
+import LeanTechnique from '../svg/leantechnique.svg';
+import Portfolio from '../svg/portfoliotool.svg';
+import SKU from '../svg/segmentation.svg';
+import Step from '../svg/stepping.svg';
+import Generational from '../svg/generational.svg';
+import Competitive from '../svg/competition.svg';
+import Statistic from '../svg/statistic.svg';
 
 export default [
   {
@@ -24,13 +30,13 @@ export default [
     content:
       'Tools to manage the portfolio of new products to insure the right mix of risk/reward and ability to execute',
 
-    customerImage: <Portfolio />,
+    customerImage: <Statistic />,
   },
   {
     title: 'Multi-Generational Product Planning',
     content:
       'Processes and tools to drive a strategic and market led approach to new product development that aligns to your business strategy. Life-cycle management of your products',
-    customerImage: <Multi />,
+    customerImage: <Generational />,
   },
   {
     title: 'Voice of Customer',
@@ -42,27 +48,27 @@ export default [
     title: 'SKU Rationalization',
     content:
       'New Product Introductions are exciting and rewarding. What about the existing products? Does the new product cannibalize the existing product? Integrate SKU rationalization into the NPI process',
-    customerImage: <Tool />,
+    customerImage: <SKU />,
   },
   {
     title: 'Competitive Analysis',
     content: 'Tear down models, reverse engineering, IP reviews',
-    customerImage: <Target />,
+    customerImage: <Competitive />,
   },
   {
     title: 'Lean Techniques',
     content: 'MVP for speed to market',
-    customerImage: <Lean />,
+    customerImage: <LeanTechnique />,
   },
   {
     title: 'Product Management Organizational Ladder/Skill acquisition',
     content: 'Map program management complexity with skills needed to ensure success',
-    customerImage: <Skill />,
+    customerImage: <Step />,
   },
   {
     title: 'M&A Portfolio Expansion',
     content:
       'Specific merger and acquisition strategies to close product portfolio gaps with “Lean M&A” concepts',
-    customerImage: <Expansion />,
+    customerImage: <Portfolio />,
   },
 ];
