@@ -9,7 +9,7 @@ import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import HeroImage from '../svg/HeroImage';
+import Landing from '../svg/landing.svg';
 import SvgCharts from '../svg/SvgCharts';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
@@ -17,7 +17,9 @@ import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
 import Slide from 'react-reveal/Slide';
 import { animations } from 'react-animation';
-
+import SVG1 from '../svg/mainpage1.svg';
+import SVG2 from '../svg/mainpage2.svg';
+import SVG3 from '../svg/mainpage3.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { Link } from 'gatsby';
@@ -76,13 +78,15 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
                   <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                    clipRule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
                   />
                 </svg>
 
@@ -90,8 +94,8 @@ export default function Home() {
               </p>
             </AnchorLink>
           </div>
-          <div className="lg:w-1/2">
-            <HeroImage />
+          <div className="ml-24 lg:w-1/2">
+            <Landing />
           </div>
         </div>
       </section>
@@ -376,7 +380,7 @@ export default function Home() {
               </p>
             </div>
           }
-          secondarySlot={<SvgCharts />}
+          secondarySlot={<SVG1 />}
         />
 
         <SplitSection
@@ -390,7 +394,7 @@ export default function Home() {
               </p>
             </div>
           }
-          secondarySlot={<SvgCharts />}
+          secondarySlot={<SVG2 />}
         />
         <SplitSection
           primarySlot={
@@ -401,12 +405,12 @@ export default function Home() {
 
               <p className="mt-8 text-xl font-light leading-relaxed">
                 Processes and tools to drive a strategic and market led approach to new product
-                development that aligns to your business strategy. Life cycle management of your
+                development that aligns to your business strategy. Life-cycle management of your
                 products.
               </p>
             </div>
           }
-          secondarySlot={<SvgCharts />}
+          secondarySlot={<SVG3 />}
         />
       </Zoom>
       <Link to="/services">
@@ -416,21 +420,21 @@ export default function Home() {
             className="container mx-auto px-16 items-center flex flex-col lg:flex-row"
           >
             <button className="focus:outline-none mt-8 text-xl font-light leading-relaxed">
-              See all our services
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="animate-bounce h-6 w-6"
+                class="animate-bounce h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
+              See all our services
             </button>
           </p>
         </LabelText>
