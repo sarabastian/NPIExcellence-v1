@@ -21,9 +21,7 @@ import SVG1 from '../svg/mainpage1.svg';
 import SVG2 from '../svg/mainpage2.svg';
 import SVG3 from '../svg/mainpage3.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
 import { Link } from 'gatsby';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Home() {
   const [isFlipped1, setFlip1] = useState(false);
@@ -449,19 +447,37 @@ export default function Home() {
           </h2>
           <Fade>
             <div
-              className={`mt-8 p-12 rounded-lg border border-solid border-gray-200`}
+              className="p-12 rounded-lg border border-solid border-gray-200 mt-12 w-2/3"
               // className={`p-12 focus:outline-none ${className}`}
               style={{
                 boxShadow: '0 10px 28px rgba(0,0,0,.08)',
               }}
             >
-              <p>
+              <div className="flex justify-left  md:my-9">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
+                </svg>
+              </div>
+              <p className="justify-right">
                 I've led product management teams across a variety of industries to achieve
                 significant top and bottom line growth, driven by NPIs. ​I’ve been a professional
-                Engineering Consultant since 2000. I believe in maintaining a positive mindset,
-                creating partnerships with a purpose, and always striving for significant outcomes.
-                When you work with me, you should expect a collaboration with transparency and
-                consistency. Want to learn more? Contact me today for an initial consultation. ​
+                Engineering Consultant since 2000.
+                <br></br>
+                <br></br>I believe in maintaining a positive mindset, creating partnerships with a
+                purpose, and always striving for significant outcomes. When you work with me, you
+                should expect a collaboration with transparency and consistency. Want to learn more?
+                Contact me today for an initial consultation. ​
               </p>
             </div>
           </Fade>
