@@ -1,6 +1,6 @@
 import React from 'react';
 import customerData from '../data/services-data';
-import Zoom from 'react-reveal/Zoom';
+import Pulse from 'react-reveal/Pulse';
 import ServiceCard from '../components/ServiceCard';
 import Footer from '../components/layout/Footer';
 import SecondPageHeader from '../components/layout/SecondPageHeader';
@@ -22,9 +22,9 @@ const Services = () => {
         <div class="grid grid-flow-col grid-cols-3 grid-rows-3 gap-4">
           {customerData.map((service, index) => (
             <div key={index} className="flex-1 px-3">
-              <Zoom>
+              <Pulse>
                 <ServiceCard service={service} />
-              </Zoom>
+              </Pulse>
             </div>
           ))}
         </div>
