@@ -442,7 +442,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Our Philosophy</LabelText>
           <div className="inline-flex space-x-10">
-            <h2 style={styles} className="flex-1 mt-20  text-xl lg:text-3xl font-light w-2/3">
+            <h2 className="flex-1 mt-20  text-xl lg:text-3xl font-light w-2/3">
               NPI Excellence's passion is transforming business performance through strategic
               planning and new product introductions (NPIs)
             </h2>
