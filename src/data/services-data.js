@@ -1,12 +1,3 @@
-import Target from '../svg/target.svg';
-import VoC from '../svg/voc.svg';
-import Lean from '../svg/mvp.svg';
-import Tool from '../svg/tool.svg';
-import Multi from '../svg/multi.svg';
-
-import Expansion from '../svg/expansion.svg';
-import Skill from '../svg/skill.svg';
-
 import Maturity from '../svg/maturitymodel.svg';
 import Customer from '../svg/reviews.svg';
 import LeanTechnique from '../svg/leantechnique.svg';

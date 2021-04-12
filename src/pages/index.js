@@ -8,15 +8,10 @@ import Card from '../components/Card';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
-import StatsBox from '../components/StatsBox';
 import Landing from '../svg/landing.svg';
-import SvgCharts from '../svg/SvgCharts';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
-import { motion } from 'framer-motion';
-import Slide from 'react-reveal/Slide';
-
 import SVG1 from '../svg/mainpage1.svg';
 import SVG2 from '../svg/mainpage2.svg';
 import SVG3 from '../svg/mainpage3.svg';
@@ -498,28 +493,29 @@ export default function Home() {
           and new product introductions (NPIs)
         </h3>
       </section> */}
+      <Fade right>
+        <section
+          id="contact"
+          className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
+        >
+          <h3 className="text-5xl font-semibold">New Products Drive Growth</h3>
 
-      <section
-        id="contact"
-        className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
-      >
-        <h3 className="text-5xl font-semibold">New Products Drive Growth</h3>
-
-        <p className="mt-8 text-xl font-light">
-          Contact me today to set up a meeting and find out more about what I can do for your
-          business.
-        </p>
-        <a href="mailto:michaekb1794@gmail.com">
-          <p className="mt-8">
-            <Button
-              className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
-              size="xl"
-            >
-              Get Started Now
-            </Button>
+          <p className="mt-8 text-xl font-light">
+            Contact me today to set up a meeting and find out more about what I can do for your
+            business.
           </p>
-        </a>
-      </section>
+          <a href="mailto:michaekb1794@gmail.com">
+            <p className="mt-8">
+              <Button
+                className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
+                size="xl"
+              >
+                Get Started Now
+              </Button>
+            </p>
+          </a>
+        </section>
+      </Fade>
     </Layout>
   );
 }
