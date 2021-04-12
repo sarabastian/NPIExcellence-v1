@@ -9,7 +9,7 @@ const SecondPageHeader = () => {
   };
 
   return (
-    <header className="sticky top-0 bg-white ">
+    <header className="sticky top-0 bg-white z-10">
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
         <div className="flex items-center text-2xl">
           <div className="mr-20">
@@ -109,13 +109,13 @@ const SecondPageHeader = () => {
           </Link>
           <Link
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            to="/#stats"
+            to="/#contact"
           >
             Contact
           </Link>
           <Link
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            to="/#testimonials"
+            to="/#contact"
           >
             Blog
           </Link>
