@@ -3,19 +3,10 @@ import VoC from '../svg/voc.svg';
 import Lean from '../svg/mvp.svg';
 import Tool from '../svg/tool.svg';
 import Multi from '../svg/multi.svg';
-
+import Portfolio from '../svg/portfolio.svg';
+import Competitive from '../svg/competitive.svg';
 import Expansion from '../svg/expansion.svg';
 import Skill from '../svg/skill.svg';
-
-import Maturity from '../svg/maturitymodel.svg';
-import Customer from '../svg/reviews.svg';
-import LeanTechnique from '../svg/leantechnique.svg';
-import Portfolio from '../svg/portfoliotool.svg';
-import SKU from '../svg/segmentation.svg';
-import Step from '../svg/stepping.svg';
-import Generational from '../svg/generational.svg';
-import Competitive from '../svg/competition.svg';
-import Statistic from '../svg/statistic.svg';
 
 export default [
   {
@@ -23,52 +14,52 @@ export default [
     content:
       'A 19 point assessment model to understand your current baseline and identify improvement areas',
 
-    customerImage: <Maturity />,
+    customerImage: <Competitive />
   },
   {
     title: 'Portfolio Management Tools',
     content:
       'Tools to manage the portfolio of new products to insure the right mix of risk/reward and ability to execute',
 
-    customerImage: <Statistic />,
+    customerImage: <Portfolio />
   },
   {
     title: 'Multi-Generational Product Planning',
     content:
       'Processes and tools to drive a strategic and market led approach to new product development that aligns to your business strategy. Life-cycle management of your products',
-    customerImage: <Generational />,
+    customerImage: <Multi />
   },
   {
     title: 'Voice of Customer',
     content:
       'Proven methods to insure new product success with customer involvement from point of inception to post launch. Kano modeling for product feature prioritization',
-    customerImage: <Customer />,
+    customerImage: <VoC />
   },
   {
     title: 'SKU Rationalization',
     content:
       'New Product Introductions are exciting and rewarding. What about the existing products? Does the new product cannibalize the existing product? Integrate SKU rationalization into the NPI process',
-    customerImage: <SKU />,
+    customerImage: <Tool />
   },
   {
     title: 'Competitive Analysis',
     content: 'Tear down models, reverse engineering, IP reviews',
-    customerImage: <Competitive />,
+    customerImage: <Target />
   },
   {
     title: 'Lean Techniques',
     content: 'MVP for speed to market',
-    customerImage: <LeanTechnique />,
+    customerImage: <Lean />
   },
   {
-    title: 'Product Management Organizational Ladder & Skill Acquisition',
+    title: 'Product Management Organizational Ladder/Skill acquisition',
     content: 'Map program management complexity with skills needed to ensure success',
-    customerImage: <Step />,
+    customerImage: <Skill />
   },
   {
     title: 'M&A Portfolio Expansion',
     content:
       'Specific merger and acquisition strategies to close product portfolio gaps with “Lean M&A” concepts',
-    customerImage: <Portfolio />,
-  },
+    customerImage: <Expansion />
+  }
 ];
