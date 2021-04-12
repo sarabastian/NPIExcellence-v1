@@ -511,22 +511,24 @@ export default function Home() {
         className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
       >
         <h3 style={styles} className="text-5xl font-semibold">
-          Ready for new growth?
+          New Products Drive Growth
         </h3>
 
         <p className="mt-8 text-xl font-light">
           Contact me today to set up a meeting and find out more about what I can do for your
           business.
         </p>
-        <p className="mt-8">
-          <Button
-            style={styles}
-            className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
-            size="xl"
-          >
-            Get Started Now
-          </Button>
-        </p>
+        <a href="mailto:michaekb1794@gmail.com">
+          <p className="mt-8">
+            <Button
+              style={styles}
+              className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
+              size="xl"
+            >
+              Get Started Now
+            </Button>
+          </p>
+        </a>
       </section>
     </Layout>
   );

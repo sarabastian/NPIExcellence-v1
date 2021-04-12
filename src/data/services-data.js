@@ -61,7 +61,7 @@ export default [
     customerImage: <LeanTechnique />,
   },
   {
-    title: 'Product Management Organizational Ladder/Skill acquisition',
+    title: 'Product Management Organizational Ladder & Skill Acquisition',
     content: 'Map program management complexity with skills needed to ensure success',
     customerImage: <Step />,
   },
