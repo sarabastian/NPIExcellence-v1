@@ -368,80 +368,83 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Zoom>
-        <SplitSection
-          id="services"
-          primarySlot={
-            <div className="lg:pr-32 xl:pr-48">
-              <h3 className="text-3xl font-semibold leading-tight">
-                NPI Maturity Model Assessment
-              </h3>
-              <p className="mt-8 text-xl font-light leading-relaxed">
-                A 19 point assessment model to understand your current baseline and identify
-                improvement areas.
-              </p>
-            </div>
-          }
-          secondarySlot={<SVG1 />}
-        />
+      <section id="services">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl lg:text-5xl font-semibold">What We Offer</h2>
+        </div>
+        <Zoom>
+          <SplitSection
+            primarySlot={
+              <div className="lg:pr-32 xl:pr-48">
+                <h3 className="text-3xl font-semibold leading-tight">
+                  NPI Maturity Model Assessment
+                </h3>
+                <p className="mt-8 text-xl font-light leading-relaxed">
+                  A 19 point assessment model to understand your current baseline and identify
+                  improvement areas.
+                </p>
+              </div>
+            }
+            secondarySlot={<SVG1 />}
+          />
 
-        <SplitSection
-          reverseOrder
-          primarySlot={
-            <div className="lg:pl-32 xl:pl-48">
-              <h3 className="text-3xl font-semibold leading-tight">Portfolio Management Tools</h3>
-              <p className="mt-8 text-xl font-light leading-relaxed">
-                Tools to manage the portfolio of new products to insure the right mix of risk/reward
-                and ability to execute.
-              </p>
-            </div>
-          }
-          secondarySlot={<SVG2 />}
-        />
-        <SplitSection
-          primarySlot={
-            <div className="lg:pr-32 xl:pr-48">
-              <h3 className="text-3xl font-semibold leading-tight">
-                Multi-Generational Product Planning
-              </h3>
+          <SplitSection
+            reverseOrder
+            primarySlot={
+              <div className="lg:pl-32 xl:pl-48">
+                <h3 className="text-3xl font-semibold leading-tight">Portfolio Management Tools</h3>
+                <p className="mt-8 text-xl font-light leading-relaxed">
+                  Tools to manage the portfolio of new products to insure the right mix of
+                  risk/reward and ability to execute.
+                </p>
+              </div>
+            }
+            secondarySlot={<SVG2 />}
+          />
+          <SplitSection
+            primarySlot={
+              <div className="lg:pr-32 xl:pr-48">
+                <h3 className="text-3xl font-semibold leading-tight">
+                  Multi-Generational Product Planning
+                </h3>
 
-              <p className="mt-8 text-xl font-light leading-relaxed">
-                Processes and tools to drive a strategic and market led approach to new product
-                development that aligns to your business strategy. Life-cycle management of your
-                products.
-              </p>
-            </div>
-          }
-          secondarySlot={<SVG3 />}
-        />
-      </Zoom>
-      <Link to="/services">
-        <LabelText className="text-gray-600">
-          <p
-            style={styles}
-            className="container mx-auto px-16 items-center flex flex-col lg:flex-row"
-          >
-            <button className="focus:outline-none mt-8 text-xl font-light leading-relaxed">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="animate-bounce h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-              See all our services
-            </button>
-          </p>
-        </LabelText>
-      </Link>
-
+                <p className="mt-8 text-xl font-light leading-relaxed">
+                  Processes and tools to drive a strategic and market led approach to new product
+                  development that aligns to your business strategy. Life-cycle management of your
+                  products.
+                </p>
+              </div>
+            }
+            secondarySlot={<SVG3 />}
+          />
+        </Zoom>
+        <Link to="/services">
+          <LabelText className="text-gray-600">
+            <p
+              style={styles}
+              className="container mx-auto px-16 items-center flex flex-col lg:flex-row"
+            >
+              <button className="focus:outline-none mt-8 text-xl font-light leading-relaxed">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="animate-bounce h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+                See all our services
+              </button>
+            </p>
+          </LabelText>
+        </Link>
+      </section>
       <section id="philosophy" className="py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Our Philosophy</LabelText>
