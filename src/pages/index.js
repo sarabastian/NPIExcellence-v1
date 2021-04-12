@@ -177,9 +177,12 @@ export default function Home() {
                         onClick={handleClick2}
                         className="focus:outline-none font-light text-xl"
                       >
-                        Product experience with components and systems, materials, chemicals,
-                        industrial gases, equipment, services, IoT connected device digital
-                        solutions and software.
+                        Product experience with{' '}
+                        <em>
+                          components and systems, materials, chemicals, industrial gases, equipment,
+                          services, IoT connected device digital solutions{' '}
+                        </em>
+                        and <em> software.</em>
                       </button>
                       <p className="mt-4"></p>
                       <button onClick={handleClick2} className="focus:outline-none">
