@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "CI= npm run build"
+    "build": "gatsby build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
