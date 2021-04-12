@@ -22,6 +22,7 @@ import SVG2 from '../svg/mainpage2.svg';
 import SVG3 from '../svg/mainpage3.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
+import Profile from '../assets/images/profile.jpg';
 
 export default function Home() {
   const [isFlipped1, setFlip1] = useState(false);
@@ -444,46 +445,42 @@ export default function Home() {
       <section id="philosophy" className="py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Our Philosophy</LabelText>
-          <h2 className="text-xl lg:text-3xl mt-6 font-light">
-            NPI Excellence's passion is transforming business performance through strategic planning
-            and new product introductions (NPIs)
-          </h2>
-          <Fade>
-            <div
-              className="p-12 rounded-lg border border-solid border-gray-200 mt-12 w-2/3"
-              // className={`p-12 focus:outline-none ${className}`}
-              style={{
-                boxShadow: '0 10px 28px rgba(0,0,0,.08)',
-              }}
-            >
-              <div className="flex justify-left  md:my-9">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
+          <div className="inline-flex space-x-10">
+            <h2 className="flex-1 mt-20  text-xl lg:text-3xl font-light w-2/3">
+              NPI Excellence's passion is transforming business performance through strategic
+              planning and new product introductions (NPIs)
+            </h2>
+            <Fade>
+              <div
+                className="flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 w-1/2"
+                // className={`p-12 focus:outline-none ${className}`}
+                style={{
+                  boxShadow: '0 10px 28px rgba(0,0,0,.08)',
+                }}
+              >
+                <div className="flex justify-right  ">
+                  <img className="w-20 h-20 mr-4 rounded-full float left" src={Profile} />
+                  {/* <img src={About} alt="NPI Excellence" className="logo" /> */}
+                  <p className="justify-right">
+                    As a professional Engineering Consultant dating back to 2000, I've led product
+                    management teams across a variety of industries to achieve significant top and
+                    bottom line growth, driven by NPIs. ​<br></br>
+                    <br></br>
+                  </p>
+                </div>
+                <div className="flex justify-right">
+                  <p>
+                    I believe in maintaining a positive mindset, creating partnerships with a
+                    purpose, and always striving for significant outcomes. When you work with me,
+                    you should expect a collaboration with transparency and consistency. Want to
+                    learn more? Contact me today for an initial consultation. ​<br></br>
+                    <br></br>
+                    Kevin Michaelis
+                  </p>
+                </div>
               </div>
-              <p className="justify-right">
-                I've led product management teams across a variety of industries to achieve
-                significant top and bottom line growth, driven by NPIs. ​I’ve been a professional
-                Engineering Consultant since 2000.
-                <br></br>
-                <br></br>I believe in maintaining a positive mindset, creating partnerships with a
-                purpose, and always striving for significant outcomes. When you work with me, you
-                should expect a collaboration with transparency and consistency. Want to learn more?
-                Contact me today for an initial consultation. ​
-              </p>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
           {/* <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
             <div className="w-full sm:w-1/3">
               <StatsBox primaryText="+100%" secondaryText="Stats Information" />
