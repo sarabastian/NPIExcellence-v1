@@ -1,14 +1,10 @@
 import React from 'react';
 import Card from './Card';
-import { animations } from 'react-animation';
 
 const ServiceCard = ({ service }) => {
-  const style = {
-    animation: animations.fadeInUp,
-  };
   return (
     <Card className="mb-8">
-      <div style={style} className="flex justify-center  md:my-9">
+      <div className="flex justify-center  md:my-9">
         {service.customerImage}
         {/* <img className="object-center rounded-full" src={service.customerImage} /> */}
       </div>

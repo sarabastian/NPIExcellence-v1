@@ -16,7 +16,7 @@ import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import { motion } from 'framer-motion';
 import Slide from 'react-reveal/Slide';
-import { animations } from 'react-animation';
+
 import SVG1 from '../svg/mainpage1.svg';
 import SVG2 from '../svg/mainpage2.svg';
 import SVG3 from '../svg/mainpage3.svg';
@@ -43,10 +43,6 @@ export default function Home() {
   const [isFlipped4, setFlip4] = useState(false);
   const handleClick4 = () => {
     setFlip4(!isFlipped4);
-  };
-
-  const styles = {
-    animation: animations.fadeInUp,
   };
 
   return (
@@ -420,10 +416,7 @@ export default function Home() {
         </Zoom>
         <Link to="/services">
           <LabelText className="text-gray-600">
-            <p
-              style={styles}
-              className="container mx-auto px-16 items-center flex flex-col lg:flex-row"
-            >
+            <p className="container mx-auto px-16 items-center flex flex-col lg:flex-row">
               <button className="focus:outline-none mt-8 text-xl font-light leading-relaxed">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -510,9 +503,7 @@ export default function Home() {
         id="contact"
         className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
       >
-        <h3 style={styles} className="text-5xl font-semibold">
-          New Products Drive Growth
-        </h3>
+        <h3 className="text-5xl font-semibold">New Products Drive Growth</h3>
 
         <p className="mt-8 text-xl font-light">
           Contact me today to set up a meeting and find out more about what I can do for your
@@ -521,7 +512,6 @@ export default function Home() {
         <a href="mailto:michaekb1794@gmail.com">
           <p className="mt-8">
             <Button
-              style={styles}
               className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
               size="xl"
             >
