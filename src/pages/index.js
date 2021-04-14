@@ -93,7 +93,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">Why We're Different</h2>
 
-          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+          <div className="flex flex-col md:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
               <Pulse>
                 {isFlipped1 ? (
@@ -434,16 +434,16 @@ export default function Home() {
         </Link>
       </section>
       <section id="philosophy" className="py-20 lg:pt-32">
-        <div className="container mx-auto text-center">
+        <div className="md:container mx-auto text-center">
           <LabelText className="text-gray-600">Our Philosophy</LabelText>
-          <div className="inline-flex space-x-10">
-            <h2 className="flex-1 mt-20  text-xl lg:text-3xl font-light w-2/3">
+          <div className="md:inline-flex space-x-10">
+            <h2 className="flex-1 mt-20  text-xl lg:text-3xl font-light md:w-2/3">
               NPI Excellence's passion is transforming business performance through strategic
               planning and new product introductions (NPIs)
             </h2>
             <Fade>
               <div
-                className="flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 w-1/2"
+                className="md:flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 md:w-1/2 "
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',
@@ -496,7 +496,7 @@ export default function Home() {
       <Fade right>
         <section
           id="contact"
-          className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
+          className="md:container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
         >
           <h3 className="text-5xl font-semibold">New Products Drive Growth</h3>
 
