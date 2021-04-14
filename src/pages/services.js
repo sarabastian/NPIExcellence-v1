@@ -19,7 +19,7 @@ const Services = () => {
           <h2 className="text-3xl lg:text-5xl font-semibold mb-8">What We Offer</h2>
         </div>
 
-        <div class="grid grid-flow-col grid-cols-3 grid-rows-3 gap-4">
+        <div class="md:grid grid-flow-col grid-cols-3 grid-rows-3 gap-4">
           {customerData.map((service, index) => (
             <div key={index} className="flex-1 px-3">
               <Pulse>

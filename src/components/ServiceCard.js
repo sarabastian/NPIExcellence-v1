@@ -10,7 +10,7 @@ const ServiceCard = ({ service }) => {
           {/* <img className="object-center rounded-full" src={service.customerImage} /> */}
         </div>
       </Fade>
-      <p className="mt-8 text-xl text-center font-semibold">{service.title}</p>
+      <p className="mt-8 text-xl text-center font-semibold ">{service.title}</p>
       <p className="text-center mt-6">{service.content}</p>
     </Card>
   );
