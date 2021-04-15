@@ -498,7 +498,7 @@ export default function Home() {
         >
           <h3 className="text-5xl lg:text-7xl font-semibold">New Products Drive Growth</h3>
 
-          <p className="p-5 mt-8 text-xl font-light">
+          <p className="p-5 mt-8 text-xl lg:text-2xl font-light">
             Contact me today to set up a meeting and find out more about what I can do for your
             business.
           </p>
