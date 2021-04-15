@@ -442,7 +442,7 @@ export default function Home() {
             </h2>
             <Fade>
               <div
-                className="p-12 space-y-10 lg:flex-1 mt-8  rounded-lg border border-solid border-gray-200 lg:w-2/3 "
+                className="px-8 p-12 space-y-10 lg:flex-1 mt-8  rounded-lg border border-solid border-gray-200 lg:w-2/3 "
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',

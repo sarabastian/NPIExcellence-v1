@@ -10,12 +10,12 @@ const SecondPageHeader = () => {
 
   return (
     <header className="sticky top-0 bg-white z-10">
-      <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
+      <div className="container sm:flex flex-row flex justify-end md:justify-between md:items-center lg:justify-between lg:items-center mx-auto py-4 px-8">
         <div className="flex items-center text-2xl">
-          <div className="mr-20">
+          <div className="">
             <Link to="/">
-              <img src={Logo} alt="NPI Excellence" className="logo" />
-            </Link>{' '}
+              <img src={Logo} alt="NPI Excellence" className="m-0" />
+            </Link>
           </div>
         </div>
         <div className="flex mt-4 sm:mt-0">
@@ -25,7 +25,7 @@ const SecondPageHeader = () => {
                 <button
                   onClick={handleMenu}
                   type="button"
-                  class=" hover:bg-gray-100 inline-flex justify-center w-full px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                  class=" hover:bg-gray-100 inline-flex justify-center w-full px-4 py-2 bg-white text-xs md:text-sm lg:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
                   id="options-menu"
                   aria-expanded="true"
                   aria-haspopup="true"
@@ -56,14 +56,14 @@ const SecondPageHeader = () => {
                 <div class="py-1" role="none">
                   <Link
                     to="/#features"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    class="block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 "
                     role="menuitem"
                   >
                     About
                   </Link>
                   <Link
                     to="/#philosophy"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    class="block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                     role="menuitem"
                   >
                     Philosophy
@@ -77,7 +77,7 @@ const SecondPageHeader = () => {
                 <button
                   onClick={handleMenu}
                   type="button"
-                  class="hover:bg-gray-100 inline-flex justify-center w-full px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                  class="font-sans hover:bg-gray-100 inline-flex justify-center w-full px-4 py-2 bg-white text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
                   id="options-menu"
                   aria-expanded="true"
                   aria-haspopup="true"
@@ -102,29 +102,24 @@ const SecondPageHeader = () => {
           )}
 
           <Link
-            className="font-sans block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            className="font-sans block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             to="/#services"
           >
             Services
           </Link>
           <Link
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            to="/#contact"
-          >
-            Contact
-          </Link>
-          <Link
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            className="font-sans block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             to="/#contact"
           >
             Blog
           </Link>
+          <Link
+            className="block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            to="/#contact"
+          >
+            Contact
+          </Link>
         </div>
-
-        {/*         
-        // <div className="hidden md:block">
-        //   <Button className="text-sm">Contact</Button>
-        // </div> */}
       </div>
     </header>
   );
