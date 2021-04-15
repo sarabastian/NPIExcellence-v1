@@ -63,7 +63,7 @@ export default function Home() {
 
             {/* </p> */}
           </div>
-          <div className="mt-10 w-4/5 lg:mr-8 lg:mt-0 lg:w-1/2 order-last lg:order-first">
+          <div className="flex justify-center ml-24 my-8 lg:w-1/2">
             <Landing />
           </div>
         </div>
@@ -433,16 +433,16 @@ export default function Home() {
         </Link>
       </section>
       <section id="philosophy" className="py-20 lg:pt-32">
-        <div className="space-y-10  md:container mx-auto text-center">
+        <div className="space-y-10  lg:container mx-auto text-center">
           <LabelText className="text-gray-600 text-3xl lg:text-5xl ">Our Philosophy</LabelText>
           <div className="space-x-10 md:inline-flex ">
-            <h2 className="flex-1 mt-20  text-xl lg:text-3xl font-light md:w-2/3">
+            <h2 className="flex-1 mt-20 p-5 text-2xl md:text-3xl lg:text-4xl font-light md:w-2/3">
               NPI Excellence's passion is transforming business performance through strategic
               planning and new product introductions (NPIs)
             </h2>
             <Fade>
               <div
-                className="p-10 space-y-10 w-auto lg:flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 md:w-1/2 "
+                className="p-5 space-y-10 w-auto lg:flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 md:w-1/2 "
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',
@@ -498,7 +498,7 @@ export default function Home() {
         >
           <h3 className="text-5xl lg:text-7xl font-semibold">New Products Drive Growth</h3>
 
-          <p className="mt-8 text-xl font-light">
+          <p className="p-5 mt-8 text-xl font-light">
             Contact me today to set up a meeting and find out more about what I can do for your
             business.
           </p>
