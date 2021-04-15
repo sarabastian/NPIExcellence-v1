@@ -45,7 +45,7 @@ export default function Home() {
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+            <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold leading-none">
               <TextLoop>
                 <span>Ideate</span>
                 <span>Create</span>
@@ -62,38 +62,37 @@ export default function Home() {
             {/* <p className="mt-8 md:mt-12"> */}
 
             {/* </p> */}
-
-            <AnchorLink className="px-4" href="#features">
-              <p className="mt-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
-                  />
-                </svg>
-
-                {/* New Products Drive Growth */}
-              </p>
-            </AnchorLink>
           </div>
-          <div className="ml-24 lg:w-1/2">
+          <div className="flex justify-center ml-24 my-8 lg:w-1/2">
             <Landing />
           </div>
+        </div>
+        <div className="grid">
+          <AnchorLink className="px-4" href="#features">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
+              />
+            </svg>
+
+            {/* New Products Drive Growth */}
+          </AnchorLink>
         </div>
       </section>
       <section id="features" className="py-20 lg:pb-40 lg:pt-48">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">Why We're Different</h2>
+          <h2 className="text-5xl lg:text-7xl font-semibold">Why We're Different</h2>
 
-          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+          <div className="flex flex-col lg:flex lg:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
               <Pulse>
                 {isFlipped1 ? (
@@ -361,7 +360,7 @@ export default function Home() {
       </section>
       <section id="services">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">What We Offer</h2>
+          <h2 className="text-5xl lg:text-7xl font-semibold">What We Offer</h2>
         </div>
         <Zoom>
           <SplitSection
@@ -434,16 +433,16 @@ export default function Home() {
         </Link>
       </section>
       <section id="philosophy" className="py-20 lg:pt-32">
-        <div className="container mx-auto text-center">
-          <LabelText className="text-gray-600">Our Philosophy</LabelText>
-          <div className="inline-flex space-x-10">
-            <h2 className="flex-1 mt-20  text-xl lg:text-3xl font-light w-2/3">
+        <div className="space-y-10  lg:container mx-auto text-center">
+          <LabelText className="text-gray-600 text-3xl lg:text-5xl ">Our Philosophy</LabelText>
+          <div className="space-x-10 md:inline-flex ">
+            <h2 className="flex-1 mt-20 p-5 text-2xl md:text-3xl lg:text-4xl font-light md:w-2/3">
               NPI Excellence's passion is transforming business performance through strategic
               planning and new product introductions (NPIs)
             </h2>
             <Fade>
               <div
-                className="flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 w-1/2"
+                className="p-5 space-y-10 w-auto lg:flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 md:w-1/2 "
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',
@@ -456,7 +455,6 @@ export default function Home() {
                     As a professional Engineering Consultant dating back to 2000, I've led product
                     management teams across a variety of industries to achieve significant top and
                     bottom line growth, driven by NPIs. ​<br></br>
-                    <br></br>
                   </p>
                 </div>
                 <div className="flex justify-right">
@@ -496,11 +494,11 @@ export default function Home() {
       <Fade right>
         <section
           id="contact"
-          className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
+          className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center "
         >
-          <h3 className="text-5xl font-semibold">New Products Drive Growth</h3>
+          <h3 className="text-5xl lg:text-7xl font-semibold">New Products Drive Growth</h3>
 
-          <p className="mt-8 text-xl font-light">
+          <p className="p-5 mt-8 text-xl font-light">
             Contact me today to set up a meeting and find out more about what I can do for your
             business.
           </p>
