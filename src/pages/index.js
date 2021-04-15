@@ -63,7 +63,7 @@ export default function Home() {
 
             {/* </p> */}
           </div>
-          <div className="flex justify-center ml-24 my-8 lg:w-1/2">
+          <div className="mx:auto ml-24 my-8 lg:w-1/2">
             <Landing />
           </div>
         </div>
@@ -435,34 +435,30 @@ export default function Home() {
       <section id="philosophy" className="py-20 lg:pt-32">
         <div className="space-y-10  lg:container mx-auto text-center">
           <LabelText className="text-gray-600 text-3xl lg:text-5xl ">Our Philosophy</LabelText>
-          <div className="space-x-10 md:inline-flex ">
-            <h2 className="flex-1 mt-20 p-5 text-3xl lg:text-4xl font-light md:w-2/3">
+          <div className="space-x-10 lg:inline-flex ">
+            <h2 className="lg:flex-1 mt-20 p-5 text-3xl lg:text-4xl font-light lg:w-2/3">
               NPI Excellence's passion is transforming business performance through strategic
               planning and new product introductions (NPIs)
             </h2>
             <Fade>
               <div
-                className="p-5 space-y-10 w-auto lg:flex-1 mt-8 p-12 rounded-lg border border-solid border-gray-200 md:w-1/2 "
+                className="p-12 space-y-10 lg:flex-1 mt-8  rounded-lg border border-solid border-gray-200 lg:w-2/3 "
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',
                 }}
               >
                 <div className="flex justify-right  ">
-                  <img className="w-20 h-20 mr-4 rounded-full float left" src={Profile} />
+                  <img className="w-24 h-24 mr-4 rounded-full float left" src={Profile} />
                   {/* <img src={About} alt="NPI Excellence" className="logo" /> */}
-                  <p className="justify-right">
+                  <p className="flex justify-left">
                     As a professional Engineering Consultant dating back to 2000, I've led product
                     management teams across a variety of industries to achieve significant top and
-                    bottom line growth, driven by NPIs. ​<br></br>
-                  </p>
-                </div>
-                <div className="flex justify-right">
-                  <p>
-                    I believe in maintaining a positive mindset, creating partnerships with a
-                    purpose, and always striving for significant outcomes. When you work with me,
-                    you should expect a collaboration with transparency and consistency. Want to
-                    learn more? Contact me today for an initial consultation. ​<br></br>
+                    bottom line growth, driven by NPIs. ​<br></br> <br></br>I believe in maintaining
+                    a positive mindset, creating partnerships with a purpose, and always striving
+                    for significant outcomes. When you work with me, you should expect a
+                    collaboration with transparency and consistency. Want to learn more? Contact me
+                    today for an initial consultation. ​<br></br>
                     <br></br>
                     Kevin Michaelis
                   </p>
@@ -505,7 +501,7 @@ export default function Home() {
           <a href="mailto:michaekb1794@gmail.com">
             <p className="mt-8">
               <Button
-                className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
+                className=" transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110"
                 size="xl"
               >
                 Get Started Now
