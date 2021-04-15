@@ -45,7 +45,7 @@ export default function Home() {
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+            <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold leading-none">
               <TextLoop>
                 <span>Ideate</span>
                 <span>Create</span>
@@ -63,13 +63,12 @@ export default function Home() {
 
             {/* </p> */}
           </div>
-          <div className="mt-10 md:ml-24 lg:mt-0 lg:w-1/2">
+          <div className="mt-10 w-4/5 lg:mr-8 lg:mt-0 lg:w-1/2 order-last lg:order-first">
             <Landing />
           </div>
         </div>
-
-        <AnchorLink className="px-4" href="#features">
-          <p className="-my-8 mx-4 md:flex ">
+        <div className="grid">
+          <AnchorLink className="px-4" href="#features">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-10 w-10"
@@ -86,14 +85,14 @@ export default function Home() {
             </svg>
 
             {/* New Products Drive Growth */}
-          </p>
-        </AnchorLink>
+          </AnchorLink>
+        </div>
       </section>
       <section id="features" className="py-20 lg:pb-40 lg:pt-48">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">Why We're Different</h2>
+          <h2 className="text-5xl lg:text-7xl font-semibold">Why We're Different</h2>
 
-          <div className="flex flex-col md:flex md:flex-row sm:-mx-3 mt-12">
+          <div className="flex flex-col lg:flex lg:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
               <Pulse>
                 {isFlipped1 ? (
@@ -361,7 +360,7 @@ export default function Home() {
       </section>
       <section id="services">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">What We Offer</h2>
+          <h2 className="text-5xl lg:text-7xl font-semibold">What We Offer</h2>
         </div>
         <Zoom>
           <SplitSection
@@ -435,7 +434,7 @@ export default function Home() {
       </section>
       <section id="philosophy" className="py-20 lg:pt-32">
         <div className="space-y-10  md:container mx-auto text-center">
-          <LabelText className="text-gray-600">Our Philosophy</LabelText>
+          <LabelText className="text-gray-600 text-3xl lg:text-5xl ">Our Philosophy</LabelText>
           <div className="space-x-10 md:inline-flex ">
             <h2 className="flex-1 mt-20  text-xl lg:text-3xl font-light md:w-2/3">
               NPI Excellence's passion is transforming business performance through strategic
@@ -495,9 +494,9 @@ export default function Home() {
       <Fade right>
         <section
           id="contact"
-          className=" md:container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center "
+          className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center "
         >
-          <h3 className="text-5xl font-semibold">New Products Drive Growth</h3>
+          <h3 className="text-5xl lg:text-7xl font-semibold">New Products Drive Growth</h3>
 
           <p className="mt-8 text-xl font-light">
             Contact me today to set up a meeting and find out more about what I can do for your
