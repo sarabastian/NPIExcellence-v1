@@ -109,7 +109,7 @@ const SecondPageHeader = () => {
           </Link>
           <Link
             className="font-sans block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            to="/#contact"
+            to="/blog"
           >
             Blog
           </Link>
