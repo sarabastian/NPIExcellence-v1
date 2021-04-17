@@ -4,8 +4,9 @@ import { Styled } from 'theme-ui';
 export default function BioContent() {
   return (
     <Fragment>
+      Words by <Styled.a href="http://example.com/">Kevin Michaelis</Styled.a>.
       <br />
-      Change me. Your awesome bio, about how great you are!
+      Change me. This is all quite default.
     </Fragment>
   );
 }

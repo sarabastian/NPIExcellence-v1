@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <div className="flex mt-4 sm:mt-0">
           {open ? (
-            <div class="relative inline-block text-left">
+            <div class="relative inline-block text-right md:text-left lg:text-left xl:text-left">
               <div>
                 <button
                   onClick={handleMenu}
