@@ -18,7 +18,7 @@ const SecondPageHeader = () => {
             </Link>
           </div>
         </div>
-        <div className="flex mt-4 sm:mt-0">
+        <div className="flex mt-4">
           {open ? (
             <div className="relative inline-block text-right md:text-left lg:text-left xl:text-left">
               <div>

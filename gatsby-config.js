@@ -28,24 +28,11 @@ module.exports = {
     // Used for resolving images in social cards
     siteUrl: `https://example.com`,
     // Used for social links in the root footer
-    menuLinks: [
-      {
-        name: `Blog`,
-        url: `/`,
-      },
-      {
-        name: `Notes`,
-        url: `/notes`,
-      },
-    ],
+
     social: [
       {
-        name: `Twitter`,
-        url: `https://twitter.com/gatsbyjs`,
-      },
-      {
-        name: `GitHub`,
-        url: `https://github.com/gatsbyjs`,
+        name: `Linkedin`,
+        url: `https://www.linkedin.com/in/kevin-michaelis/`,
       },
     ],
   },

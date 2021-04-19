@@ -21,7 +21,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <div className="flex mt-4 sm:mt-0">
+        <div className="flex mt-4 ">
           {open ? (
             <div className="relative inline-block text-right md:text-left lg:text-left xl:text-left">
               <div>
@@ -59,7 +59,7 @@ const Header = () => {
                 <div class="py-1" role="none">
                   <AnchorLink
                     href="#features"
-                    class="block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 "
+                    className="block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 "
                     role="menuitem"
                   >
                     About
