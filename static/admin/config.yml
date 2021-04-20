@@ -11,6 +11,8 @@ collections:
     folder: 'content/blog'
     create: true
     slug: 'index'
+    site_url: https://lucid-thompson-68f0a3.netlify.app/
+    display_url: https://lucid-thompson-68f0a3.netlify.app/
     media_folder: ''
     public_folder: ''
     path: '{{title}}/index'
