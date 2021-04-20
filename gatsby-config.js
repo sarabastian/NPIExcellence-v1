@@ -15,9 +15,10 @@ module.exports = {
       options: {
         // basePath defaults to `/`
         basePath: `/blog`,
-        preset: `theme-ui-tailwind-preset`,
+        preset: '@theme-ui/preset-funk',
       },
     },
+    `gatsby-plugin-netlify-cms`,
   ],
   siteMetadata: {
     // Used for the site title and SEO
