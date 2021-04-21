@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 const PostList = ({ posts }) => (
   <Fade down>
-    <div className="lg:grid grid-cols-3 grid-rows-3 gap-5">
+    <div className="divide-y divide-light-blue-400 grid-rows-3 gap-4">
       {posts.map((node) => (
         <PostLink key={node.slug} {...node} />
       ))}
