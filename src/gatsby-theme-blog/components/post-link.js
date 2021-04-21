@@ -2,7 +2,7 @@ import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 
 const PostLink = ({ title, slug, date, excerpt }) => (
-  <div class="container my-12 mx-auto px-4 md:px-12">
+  <div class="container w-full md:max-w-3xl mx-auto pt-20">
     <article
       className="p-12 outline-none mt-4"
       //   style={{
@@ -16,7 +16,7 @@ const PostLink = ({ title, slug, date, excerpt }) => (
           }}
         >
           <Link
-            className=" uppercase tracking-wide text-md  lg:text-lg text-indigo-400 font-semibold hover:underline"
+            className=" uppercase tracking-wide text-xl text-blue-500 font-semibold hover:underline"
             sx={{
               textDecoration: `none`,
             }}
@@ -32,25 +32,27 @@ const PostLink = ({ title, slug, date, excerpt }) => (
       <section className="mb-6 mt-8">
         <p>{excerpt}</p>
       </section>
-      <Link to={slug} class="text-xs lg:text-md uppercase text-gray-800 hover:text-black">
-        <p>
-          Continue Reading
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            />{' '}
-          </svg>
-        </p>
-      </Link>
+      <section className="my-0">
+        <Link to={slug} class=" text-xs lg:text-md uppercase text-gray-800 hover:text-black">
+          <p>
+            Continue Reading
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </p>
+        </Link>
+      </section>
     </article>
   </div>
 );

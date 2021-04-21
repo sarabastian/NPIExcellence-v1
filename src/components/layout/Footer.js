@@ -10,7 +10,7 @@ const Footer = () => (
           (NPIs).
         </p>
       </div>
-      <div className="flex-1 px-3">
+      {/* <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">Important Links</h2>
         <ul className="mt-4 leading-loose">
           <li>
@@ -20,7 +20,7 @@ const Footer = () => (
             <a href="">Privacy Policy</a>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">Get in Touch</h2>
         <ul className="mt-4 leading-loose">

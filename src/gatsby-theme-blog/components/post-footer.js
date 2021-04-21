@@ -5,7 +5,7 @@ import BioContent from './bio-content';
 import Avatar from '../../assets/images/profile.jpg';
 
 const PostFooter = ({ previous, next }) => (
-  <>
+  <footer>
     <hr className="border-b-2 border-gray-400 mb-8 mx-4" />
 
     <div className="flex w-full items-center font-sans px-4 py-12">
@@ -15,6 +15,7 @@ const PostFooter = ({ previous, next }) => (
           Kevin Michaelis
         </p>
         <p className="text-gray-600 text-xs md:text-base">Founder of NPI Excellence</p>
+        <BioContent />
       </div>
       <div className="justify-end">
         <Link to="/blog">
@@ -26,7 +27,6 @@ const PostFooter = ({ previous, next }) => (
     </div>
     <hr className="border-b-2 border-gray-400 mb-8 mx-4" />
 
-    <BioContent />
     {(previous || next) && (
       <Flex
         as="ul"
@@ -53,7 +53,7 @@ const PostFooter = ({ previous, next }) => (
         </li>
       </Flex>
     )}
-  </>
+  </footer>
 );
 
 export default PostFooter;

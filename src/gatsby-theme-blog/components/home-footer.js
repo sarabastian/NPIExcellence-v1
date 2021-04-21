@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { css } from 'theme-ui';
+import { Link } from 'gatsby';
 
 const Footer = ({ socialLinks }) => (
   <footer
@@ -10,22 +11,13 @@ const Footer = ({ socialLinks }) => (
   >
     © {new Date().getFullYear()}, Powered by
     {` `}
-    <a href="">NPI Excellence</a>
+    <a href="" className="text-blue-500">
+      NPI Excellence
+    </a>
     {` `}&bull;{` `}
-    {socialLinks
-      ? socialLinks.map((platform, i, arr) => (
-          <Fragment key={platform.url}>
-            <a href={platform.url} target="_blank" rel="noopener noreferrer">
-              {platform.name}
-            </a>
-            {arr.length - 1 !== i && (
-              <Fragment>
-                {` `}&bull;{` `}
-              </Fragment>
-            )}
-          </Fragment>
-        ))
-      : null}
+    <Link to="https://www.linkedin.com/in/kevin-michaelis/" className="text-blue-500">
+      Linkedin
+    </Link>
   </footer>
 );
 export default Footer;
