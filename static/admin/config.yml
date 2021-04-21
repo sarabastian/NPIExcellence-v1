@@ -15,7 +15,7 @@ collections:
     display_url: https://lucid-thompson-68f0a3.netlify.app/
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/index'
+    path: '{{title}}'
     editor:
       preview: true
     fields:
