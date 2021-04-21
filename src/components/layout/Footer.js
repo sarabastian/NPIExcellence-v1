@@ -24,7 +24,7 @@ const Footer = () => (
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">Get in Touch</h2>
         <ul className="mt-4 leading-loose">
-          <li>
+          <li className="text-md ">
             <a href="mailto:michaekb1794@gmail.com">Email</a>
           </li>
           <li>
