@@ -10,13 +10,13 @@ const PostLink = ({ title, slug, date, excerpt }) => (
       //   }}
     >
       <header>
-        <h2
+        <h1
           sx={{
             mb: 1,
           }}
         >
           <Link
-            className=" uppercase tracking-wide text-xl text-blue-500 font-semibold hover:underline"
+            className=" uppercase tracking-wide text-xl md:text-2xl lg:text-3xl text-blue-500 font-semibold hover:underline"
             sx={{
               textDecoration: `none`,
             }}
@@ -24,13 +24,13 @@ const PostLink = ({ title, slug, date, excerpt }) => (
           >
             {title || slug}
           </Link>
-        </h2>
+        </h1>
         <small>
           By <strong>Kevin Michaelis</strong>, published on {date}
         </small>
       </header>
       <section className="mb-6 mt-8">
-        <p>{excerpt}</p>
+        <em>{excerpt}</em>
       </section>
       <section className="my-0">
         <Link to={slug} class=" text-xs lg:text-md uppercase text-gray-800 hover:text-black">
