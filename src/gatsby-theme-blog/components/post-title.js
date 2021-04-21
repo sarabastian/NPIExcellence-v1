@@ -1,5 +1,5 @@
 import * as React from 'react';
 
-const PostTitle = (props) => <h1 {...props} />;
+const PostTitle = (props) => <h1 className="text-xl" {...props} />;
 
 export default PostTitle;
