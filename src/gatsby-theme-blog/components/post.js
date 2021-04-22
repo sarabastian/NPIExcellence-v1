@@ -28,7 +28,7 @@ const Post = ({
         imageAlt={post.imageAlt}
       />
       <main className="container w-full md:max-w-3xl mx-auto pt-20">
-        <div className="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
+        <div className="w-full px-40 py-6 text-xl text-gray-800 leading-normal">
           <div className="font-sans">
             <p className="text-base md:text-sm text-blue-500 font-bold">
               &lt;{' '}
@@ -39,17 +39,17 @@ const Post = ({
                 BROWSE ALL BLOGS
               </Link>
             </p>
-            <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl lg:text-5xl">
+            <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 ">
               <PostTitle>{post.title}</PostTitle>
             </h1>
-            <p className="text-sm md:text-base font-normal text-gray-600">
+            <p className="text-sm md:text-sm lg:text-lg md:text-base font-normal text-gray-600">
               <PostDate>Published {post.date}</PostDate>
             </p>
           </div>
 
           {/* <PostHero post={post} /> */}
 
-          <p class="py-6">
+          <p class="py-6 text-lg md:text-xl lg:text-2xl">
             <MDXRenderer className="">{post.body}</MDXRenderer>
           </p>
         </div>

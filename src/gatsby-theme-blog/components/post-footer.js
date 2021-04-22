@@ -5,13 +5,12 @@ import BioContent from './bio-content';
 import Avatar from '../../assets/images/profile.jpg';
 
 const PostFooter = ({ previous, next }) => (
-  <footer className="my-56">
-    <hr className="border-b-2 border-gray-400 mb-8 mx-4" />
+  <footer className="bottom-0  px-4 md:px-8 ">
+    <hr className="divide-y divide-light-blue-400 order-b-2 mb-8 mx-8" />
 
     <div className="flex w-full items-center font-sans px-4 py-12">
-      <img className="w-10 h-10 rounded-full mr-4" src={Avatar} alt="Avatar of Author" />
+      <img className="w-20 h-20 rounded-full mr-4" src={Avatar} alt="Avatar of Author" />
       <div className="flex-1 px-2">
-        <div className="s9-widget-wrapper">Share Story</div>
         <p className="text-base font-bold text-base md:text-xl leading-none mb-2">
           Kevin Michaelis
         </p>
@@ -20,13 +19,13 @@ const PostFooter = ({ previous, next }) => (
       </div>
       <div className="justify-end">
         <Link to="/blog">
-          <button className="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full">
+          <button className="bg-transparent border border-gray-500 hover:border-blue-500 text-xs text-gray-500 hover:text-blue-500 font-bold py-2 px-4 rounded-full focus:outline-none ">
             Read More
           </button>
         </Link>
       </div>
     </div>
-    <hr className="border-b-2 border-gray-400 mb-8 mx-4" />
+    <hr className="divide-y divide-light-blue-400 order-b-2 mb-8 mx-8" />
 
     {(previous || next) && (
       <Flex

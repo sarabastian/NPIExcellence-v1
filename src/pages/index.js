@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import Flip from 'react-reveal/Flip';
 
 import TextLoop from 'react-text-loop';
