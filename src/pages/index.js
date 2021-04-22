@@ -65,7 +65,7 @@ export default function Home() {
 
             {/* </p> */}
           </div>
-          <div className="mx:auto mt-10 lg:mt-0 w-1/3 lg:w-1/2 ml-24 my-8 ">
+          <div className="container w-full mx-auto mt-10 lg:mt-0 md:ml-24 lg:ml-24 lg:w-1/2 ">
             <Landing />
           </div>
         </div>
