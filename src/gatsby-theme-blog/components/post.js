@@ -28,7 +28,7 @@ const Post = ({
         imageAlt={post.imageAlt}
       />
       <main className="container w-full md:max-w-3xl mx-auto pt-20">
-        <div className="w-full px-40 py-6 text-xl text-gray-800 leading-normal">
+        <div className="w-full py-6 text-xl text-gray-800 leading-normal">
           <div className="font-sans">
             <p className="text-base md:text-sm text-blue-500 font-bold">
               &lt;{' '}
@@ -36,7 +36,7 @@ const Post = ({
                 to="/blog"
                 className="text-base md:text-sm text-blue-500 font-bold no-underline hover:underline"
               >
-                BROWSE ALL BLOGS
+                BACK TO ALL POSTS
               </Link>
             </p>
             <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 ">
