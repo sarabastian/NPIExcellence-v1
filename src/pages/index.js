@@ -18,6 +18,7 @@ import SVG3 from '../svg/mainpage3.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import Profile from '../assets/images/profile.jpg';
+import SEO from '../components/seo';
 
 export default function Home() {
   const [isFlipped1, setFlip1] = useState(false);
@@ -42,6 +43,8 @@ export default function Home() {
 
   return (
     <Layout>
+      <SEO title="Home" />
+
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">

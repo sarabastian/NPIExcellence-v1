@@ -29,11 +29,11 @@ module.exports = {
     // Used to provide alt text for your avatar
     author: `Kevin Michaelis`,
     // Used for SEO
-    description: `New product introductions are the life blood of a fast growth, high margin business. NPI Excellence, LLC can enable your company to beat the competition and delight customers, achieving your business objectives.`,
+    description: `New product introductions are the life blood of a fast growth, high margin business. NPI Excellence can enable your company to beat the competition and delight customers, achieving your business objectives.`,
     // Used for resolving images in social cards
     siteUrl: `https://lucid-thompson-68f0a3.netlify.app`,
     // Used for social links in the root footer
-
+    keywords: `npi excellence, new product introduction, Kevin Michaelis`,
     social: [
       {
         name: `Linkedin`,
