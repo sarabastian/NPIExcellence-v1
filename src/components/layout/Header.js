@@ -58,7 +58,7 @@ const Header = () => {
               >
                 <div class="py-1" role="none">
                   <AnchorLink
-                    href="#features"
+                    href="#about"
                     className="block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 "
                     role="menuitem"
                   >

@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </div>
         <div className="grid">
-          <AnchorLink className="px-4" href="#features">
+          <AnchorLink className="px-4" href="#about">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-10 w-10"
@@ -91,7 +91,7 @@ export default function Home() {
           </AnchorLink>
         </div>
       </section>
-      <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+      <section id="about" className="py-20 lg:pb-40 lg:pt-48">
         <div className="container mx-auto text-center">
           <h2 className="text-5xl lg:text-7xl font-semibold">Why We're Different</h2>
 
@@ -103,6 +103,7 @@ export default function Home() {
                     <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
                         onClick={handleClick1}
+                        aria-label="click to flip"
                         className="focus:outline-none font-light text-xl"
                       >
                         Spanning fire suppression, semiconductor materials, industrial gases, &
@@ -110,7 +111,11 @@ export default function Home() {
                       </button>
 
                       <p className="mt-4"></p>
-                      <button onClick={handleClick1} className="focus:outline-none">
+                      <button
+                        onClick={handleClick1}
+                        aria-label="click to flip"
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -134,13 +139,18 @@ export default function Home() {
                   <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8 ">
                     <Flip left isFlipped1={isFlipped1} flipDirection="vertical">
                       <button
+                        aria-label="click to flip"
                         onClick={handleClick1}
                         className="focus:outline-none font-semibold text-xl"
                       >
                         Variety of NPI Experience across Several Industries
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick1} className="focus:outline-none">
+                      <button
+                        onClick={handleClick1}
+                        aria-label="click to flip"
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -168,6 +178,7 @@ export default function Home() {
                   <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                     <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
+                        aria-label="click to flip"
                         onClick={handleClick2}
                         className="focus:outline-none font-light text-xl"
                       >
@@ -179,7 +190,11 @@ export default function Home() {
                         and <em> software.</em>
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick2} className="focus:outline-none">
+                      <button
+                        aria-label="click to flip"
+                        onClick={handleClick2}
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -202,13 +217,18 @@ export default function Home() {
                   <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                     <Flip left isFlipped2={isFlipped2} flipDirection="vertical">
                       <button
+                        aria-label="click to flip"
                         onClick={handleClick2}
                         className="focus:outline-none font-semibold text-xl"
                       >
                         New products across a broad range of spectrum of offerings
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick2} className="focus:outline-none">
+                      <button
+                        aria-label="click to flip"
+                        onClick={handleClick2}
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -237,13 +257,18 @@ export default function Home() {
                   <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                     <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
+                        aria-label="click to flip"
                         onClick={handleClick3}
                         className="focus:outline-none font-light text-xl"
                       >
                         From a product manager/senior executive, not a consulting agency
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick3} className="focus:outline-none">
+                      <button
+                        aria-label="click to flip"
+                        onClick={handleClick3}
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -266,13 +291,18 @@ export default function Home() {
                   <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                     <Flip left isFlipped3={isFlipped3} flipDirection="vertical">
                       <button
+                        aria-label="click to flip"
                         onClick={handleClick3}
                         className="focus:outline-none font-semibold text-xl"
                       >
                         Real World Product Management Experience
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick3} className="focus:outline-none">
+                      <button
+                        aria-label="click to flip"
+                        onClick={handleClick3}
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -300,6 +330,7 @@ export default function Home() {
                   <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                     <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                       <button
+                        aria-label="click to flip"
                         onClick={handleClick4}
                         className="focus:outline-none font-light text-xl"
                       >
@@ -307,7 +338,11 @@ export default function Home() {
                         FAA, UL, FM Approvals
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick4} className="focus:outline-none">
+                      <button
+                        aria-label="click to flip"
+                        onClick={handleClick4}
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -330,13 +365,18 @@ export default function Home() {
                   <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8">
                     <Flip left isFlipped4={isFlipped4} flipDirection="vertical">
                       <button
+                        aria-label="click to flip"
                         onClick={handleClick4}
                         className="focus:outline-none font-semibold text-xl"
                       >
                         Experience Integrating New Product Development Plans
                       </button>
                       <p className="mt-4"></p>
-                      <button onClick={handleClick4} className="focus:outline-none">
+                      <button
+                        aria-label="click to flip"
+                        onClick={handleClick4}
+                        className="focus:outline-none"
+                      >
                         {' '}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -452,7 +492,11 @@ export default function Home() {
                 }}
               >
                 <div className="flex justify-right  ">
-                  <img className="w-24 h-24 mr-4 rounded-full float left" src={Profile} />
+                  <img
+                    className="w-24 h-24 mr-4 rounded-full float left"
+                    src={Profile}
+                    alt="Profile Picture"
+                  />
                   {/* <img src={About} alt="NPI Excellence" className="logo" /> */}
                   <p className="flex justify-left">
                     As a professional Engineering Consultant dating back to 2000, I've led product
