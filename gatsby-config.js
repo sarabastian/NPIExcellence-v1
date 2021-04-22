@@ -25,13 +25,13 @@ module.exports = {
   ],
   siteMetadata: {
     // Used for the site title and SEO
-    title: `NPI Excellence Blog`,
+    title: `NPI Excellence`,
     // Used to provide alt text for your avatar
     author: `Kevin Michaelis`,
     // Used for SEO
-    description: `My site description...`,
+    description: `New product introductions are the life blood of a fast growth, high margin business. NPI Excellence, LLC can enable your company to beat the competition and delight customers, achieving your business objectives.`,
     // Used for resolving images in social cards
-    siteUrl: `https://example.com`,
+    siteUrl: `https://lucid-thompson-68f0a3.netlify.app`,
     // Used for social links in the root footer
 
     social: [

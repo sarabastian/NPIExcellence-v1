@@ -5,12 +5,13 @@ import BioContent from './bio-content';
 import Avatar from '../../assets/images/profile.jpg';
 
 const PostFooter = ({ previous, next }) => (
-  <footer>
+  <footer className="my-56">
     <hr className="border-b-2 border-gray-400 mb-8 mx-4" />
 
     <div className="flex w-full items-center font-sans px-4 py-12">
       <img className="w-10 h-10 rounded-full mr-4" src={Avatar} alt="Avatar of Author" />
       <div className="flex-1 px-2">
+        <div className="s9-widget-wrapper">Share Story</div>
         <p className="text-base font-bold text-base md:text-xl leading-none mb-2">
           Kevin Michaelis
         </p>
