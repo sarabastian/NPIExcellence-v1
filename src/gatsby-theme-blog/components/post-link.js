@@ -2,7 +2,7 @@ import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 
 const PostLink = ({ title, slug, date, excerpt }) => (
-  <div class="container w-full  lg:max-w-5xl mx-auto pt-20">
+  <div class="container w-full  lg:max-w-5xl mx-auto pt-23">
     <article
       className="p-12 outline-none"
       //   style={{
@@ -25,7 +25,7 @@ const PostLink = ({ title, slug, date, excerpt }) => (
             {title || slug}
           </Link>
         </h1>
-        <small className="text-sm lg:text-md">
+        <small className="text-sm lg:text-md xl:text-lg ">
           By <strong>Kevin Michaelis</strong>, published on {date}
         </small>
       </header>

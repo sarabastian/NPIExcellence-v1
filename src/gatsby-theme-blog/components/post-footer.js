@@ -15,7 +15,7 @@ const PostFooter = ({ previous, next }) => (
           Kevin Michaelis
         </p>
         <p className="text-gray-600 text-xs md:text-base">Founder of NPI Excellence</p>
-        <BioContent />
+        {/* <BioContent /> */}
       </div>
       <div className="justify-end">
         <Link to="/blog">
