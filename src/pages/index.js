@@ -525,7 +525,16 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-
+      <section id="testimonials" className="py-20 lg:py-40">
+        <div className="container mx-auto">
+          <LabelText className="mb-8 text-gray-600 text-center lg:text-lg">
+            What customers are saying
+          </LabelText>
+          <div className="flex flex-col md:flex-row md:-mx-3">
+            <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8" />
+          </div>
+        </div>
+      </section>
       {/* <section className="container mx-auto my-20 py-24 bg-gray-100 rounded-lg text-center">
         <h3 className="text-5xl font-semibold">
           {' '}
