@@ -475,16 +475,16 @@ export default function Home() {
         </Link>
       </section>
       <section id="philosophy" className="py-20 lg:pt-32">
-        <div className="space-y-10  lg:container  mx-auto text-center">
+        <div className="space-y-10 lg:container  mx-auto text-center">
           <LabelText className="text-gray-600 text-3xl lg:text-5xl ">Our Philosophy</LabelText>
           <div className="space-x-10 lg:inline-flex ">
-            <h2 className="lg:flex-1 mt-20 p-5 text-3xl lg:text-4xl font-light lg:w-2/3">
+            <h2 className="lg:flex-1 mt-20 p-5 text-3xl lg:text-4xl font-light lg:w-2/3 ">
               NPI Excellence's passion is transforming business performance through strategic
               planning and new product introductions (NPIs)
             </h2>
             <Fade>
               <div
-                className="px-8 p-12 space-y-10 lg:flex-1 mt-8  rounded-lg border border-solid border-gray-200 lg:w-2/3 "
+                className="container w-screen mx-auto px-8 p-12 lg:flex-1 mt-8  rounded-lg border border-solid border-gray-200 lg:w-2/3 "
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',
