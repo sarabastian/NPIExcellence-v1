@@ -142,7 +142,7 @@ export default function Home() {
                         onClick={handleClick1}
                         className="focus:outline-none font-semibold text-xl"
                       >
-                        Variety of NPI Experience across Several Industries
+                        Variety of NPI experience across several industries
                       </button>
                       <p className="mt-4"></p>
                       <button
@@ -294,7 +294,7 @@ export default function Home() {
                         onClick={handleClick3}
                         className="focus:outline-none font-semibold text-xl"
                       >
-                        Real World Product Management Experience
+                        Real world product management experience
                       </button>
                       <p className="mt-4"></p>
                       <button
@@ -368,7 +368,7 @@ export default function Home() {
                         onClick={handleClick4}
                         className="focus:outline-none font-semibold text-xl"
                       >
-                        Experience Integrating New Product Development Plans
+                        Experience integrating new product development plans
                       </button>
                       <p className="mt-4"></p>
                       <button
@@ -412,8 +412,8 @@ export default function Home() {
                   NPI Maturity Model Assessment
                 </h3>
                 <p className="mt-8 text-xl font-light leading-relaxed">
-                  A 19 point assessment model to understand your current baseline and identify
-                  improvement areas.
+                  An assessment model to understand your current baseline and identify improvement
+                  areas.
                 </p>
               </div>
             }

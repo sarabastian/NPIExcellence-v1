@@ -11,7 +11,7 @@ const Footer = ({ socialLinks }) => (
   >
     © {new Date().getFullYear()}, Powered by
     {` `}
-    <a href="" className="text-blue-500">
+    <a href="https://lucid-thompson-68f0a3.netlify.app/" className="text-blue-500">
       NPI Excellence
     </a>
     {` `}&bull;{` `}

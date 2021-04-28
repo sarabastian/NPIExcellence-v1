@@ -11,8 +11,7 @@ import Statistic from '../svg/statistic.svg';
 export default [
   {
     title: 'NPI Maturity Model Assessment ',
-    content:
-      'A 19 point assessment model to understand your current baseline and identify improvement areas',
+    content: 'Assessment model to understand your current baseline and identify improvement areas',
 
     customerImage: <Maturity />,
   },
