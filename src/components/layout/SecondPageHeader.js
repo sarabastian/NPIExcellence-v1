@@ -68,6 +68,13 @@ const SecondPageHeader = () => {
                   >
                     Philosophy
                   </Link>
+                  <Link
+                    to="/#testimonials"
+                    class="block px-4 py-2 text-xs md:text-sm lg:text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    Testimonials
+                  </Link>
                 </div>
               </div>
             </div>

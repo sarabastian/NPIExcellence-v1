@@ -484,7 +484,7 @@ export default function Home() {
             </h2>
             <Fade>
               <div
-                className="container w-screen mx-auto px-8 p-12 lg:flex-1 mt-8  rounded-lg border border-solid border-gray-200 lg:w-2/3 "
+                className="container w-screen mx-auto px-8 p-12 lg:flex-1 mt-8  rounded-lg border border-solid border-gray-200 lg:w-1/2"
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',
@@ -506,7 +506,7 @@ export default function Home() {
                     collaboration with transparency and consistency. Want to learn more? Contact me
                     today for an initial consultation. ​<br></br>
                     <br></br>
-                    Kevin Michaelis
+                    -Kevin Michaelis
                   </p>
                 </div>
               </div>
@@ -525,13 +525,15 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <section id="testimonials" className="py-20 lg:py-40">
-        <div className="container mx-auto">
-          <LabelText className="mb-8 text-gray-600 text-center lg:text-lg">
+      <section id="testimonials" className="py-20 lg:pt-32">
+        <div className="space-y-10 lg:container  mx-auto text-center">
+          <LabelText className="text-gray-600 text-3xl lg:text-5xl ">
             What customers are saying
           </LabelText>
-          <div className="flex flex-col md:flex-row md:-mx-3">
-            <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8" />
+          <div className="md:-mx-3">
+            <Fade>
+              <Card className="transition duration-500 ease-in-out hover transform hover:-translate-y-1 hover:scale-110 mb-8" />
+            </Fade>
           </div>
         </div>
       </section>
