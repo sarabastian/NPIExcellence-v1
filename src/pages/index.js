@@ -478,13 +478,13 @@ export default function Home() {
         <div className="space-y-10  lg:container  mx-auto text-center">
           <LabelText className="text-gray-600 text-3xl lg:text-5xl ">Our Philosophy</LabelText>
           <div className="space-x-10 grid lg:inline-flex ">
-            <h2 className="grid lg:flex-1 mt-20 p-5 text-3xl lg:text-4xl font-light lg:w-2/3 ">
+            <h2 className=" lg:flex-1 mt-20 p-5 text-3xl lg:text-4xl font-light lg:w-2/3 ">
               NPI Excellence's passion is transforming business performance through strategic
               planning and new product introductions (NPIs)
             </h2>
             <Fade>
               <div
-                className="grid justify-items-center mx-auto w-5/6 px-8 p-12 lg:flex-1 mt-8 rounded-lg border border-solid border-gray-200  lg:w-1/2"
+                className=" justify-items-center w-5/6 mx-auto px-8 p-12 lg:flex-1 mt-8 rounded-lg border border-solid border-gray-200 md:border-dotted lg:w-1/2"
                 // className={`p-12 focus:outline-none ${className}`}
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.08)',
@@ -497,7 +497,7 @@ export default function Home() {
                     alt="Profile Picture"
                   />
                   {/* <img src={About} alt="NPI Excellence" className="logo" /> */}
-                  <p className="flex justify-left">
+                  <p className="flex justify-left font-light">
                     As a professional Engineering Consultant dating back to 2000, I've led product
                     management teams across a variety of industries to achieve significant top and
                     bottom line growth, driven by NPIs. ​<br></br> ​<br></br> I believe in
