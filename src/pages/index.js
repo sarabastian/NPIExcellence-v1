@@ -524,7 +524,7 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <section id="testimonials" className="py-20 lg:pt-32">
+      {/* <section id="testimonials" className="py-20 lg:pt-32">
         <div className="space-y-10  lg:container  mx-auto text-center">
           <LabelText className="text-gray-600 text-2xl md:text-3xl lg:text-5xl ">
             What customers are saying
@@ -535,14 +535,8 @@ export default function Home() {
             </Fade>
           </div>
         </div>
-      </section>
-      {/* <section className="container mx-auto my-20 py-24 bg-gray-100 rounded-lg text-center">
-        <h3 className="text-5xl font-semibold">
-          {' '}
-          NPI Excellence's passion is transforming business performance through strategic planning
-          and new product introductions (NPIs)
-        </h3>
       </section> */}
+    
       <Fade right>
         <section
           id="contact"
